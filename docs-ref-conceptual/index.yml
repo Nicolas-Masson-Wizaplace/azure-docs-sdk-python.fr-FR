@@ -1,0 +1,81 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure pour développeurs Python
+metadata:
+  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
+  title: 'Azure pour développeurs Python - didacticiels, référence d’API'
+  description: Prenez le développement d’applications en main avec Azure en utilisant les ressources ci-dessous pour trouver d’excellents didacticiels et outils pour les développeurs Python.
+  keywords: 'Azure, Python, Kit de développement logiciel (SDK), API'
+  author: lisawong19
+  ms.author: liwong
+  manager: douge
+  ms.date: 07/20/2017
+  ms.topic: article
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: python
+  ms.service: multiple
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Prenez le développement d’applications en main avec Azure en utilisant les ressources ci-dessous pour trouver d’excellents didacticiels et outils pour les développeurs Python.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+            html: <p>Déployer votre première application web sur Azure</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Prise en main
+          - href: 'https://azure.microsoft.com/resources/samples/?platform=pythont&view=azure-python'
+            html: <p>Exemples de code Azure avec Python</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: Exemples de code
+          - href: 'https://docs.microsoft.com/python/azure/python-azure-tools'
+            html: <p>Outils de développeur</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
+            title: Kit de développement logiciel (SDK) &amp; outils
+          - href: 'https://docs.microsoft.com/en-us/python/api/overview/azure/?view=azure-python'
+            html: <p>Bibliothèques Python</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
+            title: Référence API
+  - title: "Démarrages en 5\_minutes"
+    items:
+      - type: paragraph
+        text: Découvrez comment générer des applications Python avec les services Azure.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/app-service-web.svg'
+            title: Déployer votre première application web sur Azure
+            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
+            title: Connecter votre application à Azure PostgreSQL Database
+            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
+            title: Générer une application web avec Cosmos DB
+            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/DataLakeStore.svg'
+            title: Gérer Azure Data Lake Analytics
+            href: 'https://docs.microsoft.com//azure/data-lake-analytics/data-lake-analytics-manage-use-python-sdk'
+  - title: Exemples
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://azure.microsoft.com/resources/samples/container-service-python-manage/">Déployer un conteneur Docker dans un cluster Azure et s’y connecter</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-python-manage/">Prise en main de la gestion du stockage Azure dans Python</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/">Exemple de gestion de machines virtuelles Azure</a>'
