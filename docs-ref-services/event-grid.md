@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: 81c4e74b00ac59c789c5a0b83eaa10652ec6d8ac
-ms.sourcegitcommit: db4608e494cb4340649bce98ba9fb4504d3686bb
+ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/14/2017
 ---
-# <a name="service-bus-libraries-for-python"></a>Bibliothèques Service Bus pour Python
+# <a name="event-grid-libraries-for-python"></a>Bibliothèques Event Grid pour Python
 
 ## <a name="overview"></a>Vue d'ensemble
 Azure Event Grid est un service de routage d’événement intelligent et entièrement géré qui permet une consommation d’événements uniforme à l’aide d’un modèle publication-abonnement.
