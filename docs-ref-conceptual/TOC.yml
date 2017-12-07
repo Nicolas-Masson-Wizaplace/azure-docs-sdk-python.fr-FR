@@ -6,7 +6,7 @@
     - name: Outils
       href: python-azure-tools.md
     - name: Prise en main des modules Python
-      href: python-sdk-azure-get-started.md
+      href: python-sdk-azure-get-started.yml
     - name: Authentification
       href: python-sdk-azure-authenticate.md
     - name: Démarrages rapides
