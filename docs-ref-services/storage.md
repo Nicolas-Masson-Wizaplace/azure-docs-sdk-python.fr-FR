@@ -11,15 +11,15 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
-ms.openlocfilehash: 64465964d32934a6a45dec44cb92a0a8a84b9c37
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: e00e821ff3e806a994fa8d96aae50c35eeeb8392
+ms.sourcegitcommit: 5ab15a7214082d16f339a13e4ae7735b3a57a9aa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="azure-storage-libraries-for-python"></a>Bibliothèques de stockage Azure pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 - Lire et écrire des objets et des fichiers à partir du [Stockage Blob Azure](https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-blob-storage)
 - Envoyer et recevoir des messages entre des applications connectées par le cloud avec le [stockage de files d’attente Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
 - Lire et écrire des données structurées volumineuses avec le [stockage de tables Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage) 
@@ -31,20 +31,21 @@ Créer, mettre à jour et gérer les requêtes et les comptes de stockage Azure 
 
 ### <a name="client"></a>Client
 
+Les bibliothèques clientes de stockage Azure sont constituées de 4 packages : objet blob, fichier, file d’attente et Table. Pour installer le package de l’objet blob, exécutez :
+
 ```bash
-pip install azure-storage
+pip install azure-storage-blob
 ```
 
-### <a name="management"></a>Gestion
+### <a name="management"></a>gestion
 
 ```bash
 pip install azure-mgmt-storage
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>exemples
 ```python
-storage_client = CloudStorageAccount(storage_account_name, storage_key)
-blob_service = storage_client.create_block_blob_service()
+blob_service = BlockBlobService(account_name, account_key)
 
 blob_service.create_container(
     'mycontainername',
@@ -65,8 +66,8 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 | | |
 |--|--|
-| [Prise en main du stockage Blob Azure dans Python](https://azure.microsoft.com/resources/samples/storage-blob-python-getting-started/) | Créer, lire, mettre à jour, limiter l’accès et supprimer des fichiers et des objets dans le stockage Azure. |
-| [Prise en main du stockage de file d’attente Azure dans Python](https://azure.microsoft.com/resources/samples/storage-queue-python-getting-started/) | Insérez, Affichez un aperçu, récupérez et supprimez des messages à partir du stockage de files d’attente Azure. | 
+| [Prise en main du stockage Blob Azure dans Python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-python-how-to-use-blob-storage) | Créer, lire, mettre à jour, limiter l’accès et supprimer des fichiers et des objets dans le stockage Azure. |
+| [Prise en main du stockage de file d’attente Azure dans Python](https://docs.microsoft.com/en-us/azure/storage/queues/storage-python-how-to-use-queue-storage) | Insérez, Affichez un aperçu, récupérez et supprimez des messages à partir du stockage de files d’attente Azure. | 
 | [Gérer des comptes de stockage Azure](https://azure.microsoft.com/resources/samples/storage-python-manage) | Créer, mettre à jour et supprimer des comptes de stockage. Récupérer et régénérer des clés d’accès de compte de stockage.
 
 Découvrez d’autres [exemples de code Python](https://azure.microsoft.com/resources/samples/?platform=python) à utiliser dans vos applications.
