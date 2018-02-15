@@ -3,6 +3,8 @@
   items:
     - name: Vue d'ensemble
       href: python-sdk-azure-overview.md
+    - name: Installation
+      href: /azure/python-how-to-install
     - name: Outils
       href: python-azure-tools.md
     - name: Prise en main des modules Python
