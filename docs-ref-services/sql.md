@@ -8,15 +8,15 @@ ms.date: 01/09/2018
 ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: baa0e53a77d18dc93241135b5b0fecff5786114c
-ms.sourcegitcommit: ab96bcebe9d5bfa5f32ec5a61b79bd7483fadcad
+ms.openlocfilehash: 6c442a7a1e639938c993e8c1e6f74bc5e0a730b7
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Bibliothèques Azure SQL Database pour Python
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Utilisez les données stockées dans [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) à partir de Python avec le pilote de base de données [ODBC pyodbc](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers). Consultez notre [guide de démarrage rapide](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) pour en savoir plus sur la connexion à une base de données SQL Azure et l’utilisation d’instructions Transact-SQL pour interroger des données et obtenir des [exemples](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) de mise en route avec pyodbc.
 
@@ -61,7 +61,7 @@ while row:
 
 pyodbc fonctionne avec les autres ORM tel que [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) et [Django](https://github.com/lionheart/django-pyodbc/). 
 
-## <a name="management-apipythonapioverviewazuresqlmanagementlibrary"></a>[API de gestion](/python/api/overview/azure/sql/managementlibrary)
+## <a name="management-apipythonapioverviewazuresqlmanagement"></a>[API de gestion](/python/api/overview/azure/sql/management)
 
 Créez et gérez des ressources Azure SQL Database dans votre abonnement avec l’API de gestion. 
 
@@ -109,5 +109,5 @@ firewall_rule = sql_client.firewall_rules.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/sql/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/sql/management)
 

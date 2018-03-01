@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
-ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
+ms.openlocfilehash: 299b50ce8366d0c49ade28dfece98d6696a4f9ef
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="event-grid-libraries-for-python"></a>Bibliothèques Event Grid pour Python
 
@@ -27,7 +27,7 @@ Azure Event Grid est un service de routage d’événement intelligent et entiè
 pip install azure-mgmt-eventgrid
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 L’exemple suivant crée une rubrique personnalisée, s’abonne à la rubrique et déclenche l’événement pour afficher le résultat. RequestBin est un outil tiers en open-source qui vous permet de créer un point de terminaison et d’afficher les requêtes qui lui sont envoyées. Accédez à [RequestBin](https://requestb.in/), puis cliquez sur **Créer un RequestBin**. Copiez l’URL du fichier bin, dont vous avez besoin pour vous abonner à la rubrique.
 
 ```python
@@ -85,5 +85,5 @@ az group delete --name gridResourceGroup
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/eventgrid/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/eventgrid/management)
 

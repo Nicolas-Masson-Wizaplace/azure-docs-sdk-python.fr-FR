@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 04c235274fe16f115ded7ff6c843b4fb709d834e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: cf08ad39929d596af215c7185d3189e6e17d1760
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-search-libraries-for-python"></a>Bibliothèques de recherche Azure pour Python
 
 ## <a name="install-the-libraries"></a>Installer les bibliothèques
 
 
-### <a name="management"></a>Gestion
+### <a name="management"></a>gestion
 
 ```bash
 pip install azure-mgmt-search
 ```
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/search/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/search/management)

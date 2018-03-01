@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: f954499888cbc3dfe4793a3e769b85ceb5de71d2
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-batch-libraries-for-python"></a>Bibliothèques Azure Batch pour Python
 
@@ -33,7 +33,7 @@ Les bibliothèques de client Azure Batch vous permettent de configurer des nœud
 ```bash
 pip install azure-batch
 ```
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 
 Configurez un pool de nœuds de calcul Linux dans un compte Batch :
 
@@ -64,9 +64,9 @@ Utilisez les bibliothèques de gestion Azure Batch pour créer et supprimer des 
 pip install azure-mgmt-batch
 ```
 > [!div class="nextstepaction"]
-> [Explorer les API clientes](/python/api/overview/azure/batch/clientlibrary)
+> [Explorer les API clientes](/python/api/overview/azure/batch/client)
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 Créez un compte Azure Batch, puis configurez pour ce compte une nouvelle application et un compte de stockage Azure.
 
 ```python
@@ -105,4 +105,4 @@ creating.wait()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/batch/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/batch/management)

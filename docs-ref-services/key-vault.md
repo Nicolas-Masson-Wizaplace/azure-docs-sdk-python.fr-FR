@@ -9,11 +9,11 @@ ms.date: 07/18/2017
 ms.topic: article
 ms.devlang: python
 ms.service: keyvault
-ms.openlocfilehash: 3eac46eb4d5d19273ead9f19b739f6fb6d72e5cc
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 6f0f1012839dad21fb8140dbbdf0f883d2877317
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-key-vault-libraries-for-python"></a>Bibliothèques Azure Key Vault pour Python
 
@@ -32,7 +32,7 @@ En savoir plus sur [Azure Key Vault](/azure/key-vault/key-vault-whatis).
 pip install azure-keyvault
 ```
 
-## <a name="example"></a>Exemple
+## <a name="example"></a>exemples
 Récupérez une [clé web JSON](https://tools.ietf.org/html/draft-ietf-jose-json-web-key-18) à partir de Key Vault.
 
 ```python
@@ -57,14 +57,14 @@ key_bundle = client.get_key(vault_url, key_name, key_version)
 json_key = key_bundle.key
 ```
 [!div class="nextstepaction"]
-[Explorer les API clientes](/python/api/overview/azure/keyvault/clientlibrary)
+[Explorer les API clientes](/python/api/overview/azure/keyvault/client)
 
 ### <a name="management-api"></a>API de gestion
 ```bash
 pip install azure-mgmt-keyvault
 ```
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 L’exemple suivant montre comment créer un coffre Azure Key Vault. 
 
 ```python
@@ -103,7 +103,7 @@ vault = kv_client.vaults.create_or_update(
 > [Explorer les API de gestion](/python/api/azure.mgmt.keyvault)
 
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/keyvault/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/keyvault/management)
 
 ## <a name="samples"></a>Exemples
 * [Gérer les coffres de clés][1] 

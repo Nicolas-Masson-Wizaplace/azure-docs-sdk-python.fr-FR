@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: mysql
-ms.openlocfilehash: 2ea2ed06d4532f9c9366257e049856dcef73385e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: f03134bfddfabc426cbcaf4d98ef86d14038861f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-mysql-libraries-for-python"></a>Bibliothèques Azure MySQL pour Python 
 
@@ -27,7 +27,7 @@ Utilisez des ressources et des données stockées dans la [base de données Azur
 
 Nous recommandons le [pilote ODBC](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) Microsoft comme bibliothèque client pour accéder à la base de données Azure pour MySQL. Utilisez le pilote ODBC pour vous connecter à la base de données et exécuter les instructions SQL directement.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 
 Connectez-vous à la base de données Azure pour MySQL et sélectionnez tous les enregistrements dans le tableau des ventes. Il est possible d’obtenir la chaîne de connexion ODBC de la base de données à partir du portail Azure.
 
@@ -57,7 +57,7 @@ pip install azure-mgmt-rdbms
 
 Veuillez consulter la page sur l’[l’authentification du Kit de développement logiciel (SDK) Python](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate)pour en savoir plus sur l’obtention des informations d’identification pour l’authentification avec le client de gestion.
 
-### <a name="example"></a>Exemple
+### <a name="example"></a>exemples
 
 Créez une ressource de base de données MySQL 5.7 et restreignez l’accès à une plage d’adresses IP à l’aide d’une règle de pare-feu.
 
@@ -105,4 +105,4 @@ firewall_rule = rule_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [Explorer les API de gestion](/python/api/overview/azure/mysql/managementlibrary)
+> [Explorer les API de gestion](/python/api/overview/azure/mysql/management)
