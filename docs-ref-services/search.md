@@ -11,21 +11,21 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 04c235274fe16f115ded7ff6c843b4fb709d834e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: cf08ad39929d596af215c7185d3189e6e17d1760
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-search-libraries-for-python"></a><span data-ttu-id="be6c8-104">Bibliothèques de recherche Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="be6c8-104">Azure Search libraries for python</span></span>
+# <a name="azure-search-libraries-for-python"></a><span data-ttu-id="b619f-104">Bibliothèques de recherche Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="b619f-104">Azure Search libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="be6c8-105">Installer les bibliothèques</span><span class="sxs-lookup"><span data-stu-id="be6c8-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="b619f-105">Installer les bibliothèques</span><span class="sxs-lookup"><span data-stu-id="b619f-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="be6c8-106">Gestion</span><span class="sxs-lookup"><span data-stu-id="be6c8-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="b619f-106">gestion</span><span class="sxs-lookup"><span data-stu-id="b619f-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-search
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="be6c8-107">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="be6c8-107">Explore the Management APIs</span></span>](/python/api/overview/azure/search/managementlibrary)
+> [<span data-ttu-id="b619f-107">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="b619f-107">Explore the Management APIs</span></span>](/python/api/overview/azure/search/management)
