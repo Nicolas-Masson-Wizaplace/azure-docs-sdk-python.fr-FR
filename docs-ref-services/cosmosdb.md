@@ -1,27 +1,27 @@
 ---
-title: "Bibliothèques Azure CosmosDB pour Python"
-description: "Consulter la documentation sur les bibliothèques de client Python pour CosmosDB"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, SQL, base de données, Postgres, CosmosDB, NoSQL"
+title: Bibliothèques Azure Cosmos DB pour Python
+description: Consulter la documentation sur les bibliothèques de client Python pour Azure Cosmos DB
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, SQL, base de données, Postgres, Cosmos DB, NoSQL
 author: lisawong19
 ms.author: liwong
 manager: douge
-ms.date: 08/11/2017
+ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: d56dd69f4fc4513034046f9f721608ad94ff5cfe
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
+ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
-# <a name="azure-cosmosdb-libraries-for-python"></a>Bibliothèques Azure CosmosDB pour Python
+# <a name="azure-cosmos-db-libraries-for-python"></a>Bibliothèques Azure Cosmos DB pour Python
 
 ## <a name="overview"></a>Vue d'ensemble
 
-Utilisez CosmosDB dans vos applications Python pour stocker et interroger des documents JSON dans un stockage de données NoSQL.
+Utilisez Azure Cosmos DB dans vos applications Python pour stocker et interroger des documents JSON dans un magasin de données NoSQL.
 
-En savoir plus sur [Azure CosmosDB](https://docs.microsoft.com/azure/cosmos-db/introduction).
+Apprenez-en davantage sur [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).
 
 ## <a name="client-library"></a>Bibliothèque cliente
  ```bash
@@ -33,15 +33,15 @@ pip install pydocumentdb
 pip install azure-mgmt-cosmosdb
 ```
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 
-Trouver des documents correspondants dans CosmosDB à l’aide d’une interface de requête de type SQL :
+Trouver des documents correspondants dans Azure Cosmos DB à l’aide d’une interface de requête de type SQL :
 
 ```python
 import pydocumentdb
 import pydocumentdb.document_client as document_client
 
-# Initialize the Python DocumentDB client
+# Initialize the Python Azure Cosmos DB client
 client = document_client.DocumentClient(config['ENDPOINT'], {'masterKey': config['MASTERKEY']})
 # Create a database
 db = client.CreateDatabase({ 'id': config['DOCUMENTDB_DATABASE'] })
@@ -83,6 +83,6 @@ print(results)
 
 ## <a name="samples"></a>Exemples
 
-[Développer une application Python en utilisant l’API DocumentDB d’Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
+[Développer une application Python à l’aide d’Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
 
 
