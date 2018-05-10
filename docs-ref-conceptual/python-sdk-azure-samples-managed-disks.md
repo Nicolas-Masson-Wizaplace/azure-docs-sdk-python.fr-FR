@@ -1,20 +1,20 @@
 ---
 title: Managed Disks
-description: "Création, redimensionnement et mise à jour d’un disque géré."
+description: Création, redimensionnement et mise à jour d’un disque géré.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 1dceb1b2fe700904b530f1834f0338f7d5e61999
-ms.sourcegitcommit: 3e477d608bbb41f0c561c88e4c665013e3008c26
+ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="managed-disks"></a>Managed Disks
 
@@ -22,7 +22,7 @@ Azure Managed Disks et 1 000 machines virtuelles dans un groupe identique sont 
 
 
 
-Du point de vue du développeur, l’expérience Managed Disks dans Azure CLI est idiomatique à l’expérience CLI rencontrée dans d’autres outils multiplateformes. Vous pouvez utiliser le Kit de développement logiciel (SDK) [Azure Python](https://azure.microsoft.com/develop/python/) et le [package azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) pour administrer Managed Disks. Vous pouvez créer un client de calcul à l’aide de ce [didacticiel](http://azure-sdk-for-python.readthedocs.io/en/latest/resourcemanagementcomputenetwork.html).
+Du point de vue du développeur, l’expérience Managed Disks dans Azure CLI est idiomatique à l’expérience CLI rencontrée dans d’autres outils multiplateformes. Vous pouvez utiliser le Kit de développement logiciel (SDK) [Azure Python](https://azure.microsoft.com/develop/python/) et le [package azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) pour administrer Managed Disks. Vous pouvez créer un client de calcul à l’aide de ce [didacticiel](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
 
 
 ## <a name="standalone-managed-disks"></a>Disques gérés autonomes
