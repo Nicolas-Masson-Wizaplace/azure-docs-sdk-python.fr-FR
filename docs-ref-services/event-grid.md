@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Event Grid pour Python"
-description: 
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, Event Grid"
+title: Bibliothèques Azure Event Grid pour Python
+description: ''
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, Event Grid
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -11,24 +11,85 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: 299b50ce8366d0c49ade28dfece98d6696a4f9ef
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: e68504b3ba5834a145af1231eacc076e424a2256
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="event-grid-libraries-for-python"></a>Bibliothèques Event Grid pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+
 Azure Event Grid est un service de routage d’événement intelligent et entièrement géré qui permet une consommation d’événements uniforme à l’aide d’un modèle publication-abonnement.
 
-## <a name="management-api"></a>API de gestion
+[En savoir plus](/azure/event-grid/overview) sur Azure Event Grid et la prise en main avec le [didacticiel des événements de stockage d’objets Blob Azure](/azure/storage/blobs/storage-blob-event-quickstart). 
+
+## <a name="publish-sdk"></a>Kit de développement logiciel de publication
+
+Authentifiez, créez et gérez et publiez des événements dans des rubriques à l’aide du kit de développement logiciel de publication de Azure Event Grid.
+
+### <a name="installation"></a>Installation 
+
+Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :
+
+```bash
+pip install azure-eventgrid
+```
+
+### <a name="example"></a>Exemples 
+
+Le code suivant publie un événement dans une rubrique. Vous pouvez récupérer la clé de la rubrique et le point de terminaison à partir du portail Azure ou via Azure CLI :
+
+```azurecli-interactive
+endpoint=$(az eventgrid topic show --name <topic_name> -g gridResourceGroup --query "endpoint" --output tsv)
+key=$(az eventgrid topic key list --name <topic_name> -g gridResourceGroup --query "key1" --output tsv)
+```
+
+```python
+from datetime import datetime
+from azure.eventgrid import EventGridClient
+from msrest.authentication import TopicCredentials
+
+def publish_event(self):
+
+        credentials = TopicCredentials(
+            self.settings.EVENT_GRID_KEY
+        )
+        event_grid_client = EventGridClient(credentials)
+        event_grid_client.publish_events(
+            "your-endpoint-here",
+            events=[{
+                'id' : "dbf93d79-3859-4cac-8055-51e3b6b54bea",
+                'subject' : "Sample subject",
+                'data': {
+                    'key': 'Sample Data'
+                },
+                'event_type': 'SampleEventType',
+                'event_time': datetime(2018, 5, 2),
+                'data_version': 1
+            }]
+        )
+```
+
+> [!div class="nextstepaction"]
+> [Explorer les API clientes](/python/api/overview/azure/eventgrid/client)
+
+## <a name="management-sdk"></a>Kit de développement logiciel (SDK) de gestion
+
+Créez, mettez à jour et supprimez des instances, des rubriques et des abonnements Event Grid avec le kit de développement logiciel de gestion.
+
+### <a name="installation"></a>Installation 
+
+Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :
+
 ```bash
 pip install azure-mgmt-eventgrid
 ```
 
-### <a name="example"></a>exemples
-L’exemple suivant crée une rubrique personnalisée, s’abonne à la rubrique et déclenche l’événement pour afficher le résultat. RequestBin est un outil tiers en open-source qui vous permet de créer un point de terminaison et d’afficher les requêtes qui lui sont envoyées. Accédez à [RequestBin](https://requestb.in/), puis cliquez sur **Créer un RequestBin**. Copiez l’URL du fichier bin, dont vous avez besoin pour vous abonner à la rubrique.
+### <a name="example"></a>Exemples
+
+La commande suivante crée une rubrique personnalisée et abonne un point de terminaison à la rubrique. Le code envoie ensuite un événement à la rubrique via le protocole HTTPS.
+RequestBin est un outil tiers en open-source qui vous permet de créer un point de terminaison et d’afficher les requêtes qui lui sont envoyées. Accédez à [RequestBin](https://requestb.in/), puis cliquez sur **Créer un RequestBin**. Copiez l’URL du fichier bin, dont vous avez besoin pour vous abonner à la rubrique.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient
@@ -87,3 +148,6 @@ az group delete --name gridResourceGroup
 > [!div class="nextstepaction"]
 > [Explorer les API de gestion](/python/api/overview/azure/eventgrid/management)
 
+## <a name="learn-more"></a>En savoir plus
+
+[Recevoir des événements avec le kit de développement logiciel Event Grid](/azure/event-grid/receive-events)
