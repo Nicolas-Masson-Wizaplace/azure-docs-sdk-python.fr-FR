@@ -35,13 +35,13 @@ L’exemple suivant utilise un [principal de service](https://docs.microsoft.com
 ```python
     from azure.common.credentials import ServicePrincipalCredentials
 
-    # Tenant ID for your Azure Subscription
+    # ID du tenant de votre souscription Azure
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # Your Service Principal App ID
+    # App ID de votre Service Principal
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Your Service Principal Password
+    # Mot de passe de votre Service Principal
     KEY = 'password'
 
     credentials = ServicePrincipalCredentials(
@@ -57,13 +57,13 @@ L’exemple suivant utilise un [principal de service](https://docs.microsoft.com
     from azure.common.credentials import ServicePrincipalCredentials
     from msrestazure.azure_cloud import AZURE_CHINA_CLOUD
 
-    # Tenant ID for your Azure Subscription
+    # ID du tenant de votre souscription Azure
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # Your Service Principal App ID
+    # App ID de votre Service Principal
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Your Service Principal Password
+    # Mot de passe de votre Service Principal
     KEY = 'password'
 
     credentials = ServicePrincipalCredentials(
@@ -81,13 +81,13 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
     from msrestazure.azure_active_directory import AdalAuthentication
     from msrestazure.azure_cloud import AZURE_PUBLIC_CLOUD
 
-    # Tenant ID for your Azure Subscription
+    # ID du tenant de votre souscription Azure
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # Your Service Principal App ID
+    # App ID de votre Service Principal
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Your Service Principal Password
+    # Mot de passe de votre Service Principal
     KEY = 'password'
 
     LOGIN_ENDPOINT = AZURE_PUBLIC_CLOUD.endpoints.active_directory
@@ -104,12 +104,12 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
 
 Tous les appels valides ADAL peuvent être utilisés avec la classe `AdalAuthentication`.
 
-Créez ensuite un objet de client pour commencer à utiliser l’API :
+Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
 
-# Your Azure Subscription ID
+# Votre identifiant de souscription Azure
 subscription_id = '33333333-3333-3333-3333-333333333333'
 
 client = ComputeManagementClient(credentials, subscription_id)
@@ -168,20 +168,21 @@ MSI est un moyen simple pour une ressource sous Azure d’utiliser le Kit de dé
 from msrestazure.azure_active_directory import MSIAuthentication
 from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
-    # Create MSI Authentication
+    # Créer une instance de MSIAuthentication
     credentials = MSIAuthentication()
 
 
-    # Create a Subscription Client
+    # Créer un client de souscription
     subscription_client = SubscriptionClient(credentials)
     subscription = next(subscription_client.subscriptions.list())
     subscription_id = subscription.subscription_id
 
-    # Create a Resource Management client
+    # Créer un client de gestion de ressource
     resource_client = ResourceManagementClient(credentials, subscription_id)
 
     
-    # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
+    # À titre d'exemple, nous listons les groupes de ressources. 
+    # La seule limite est le rôle et la politique assignés à ce jeton MSI.
     for resource_group in resource_client.resource_groups.list():
         print(resource_group.name)
 
@@ -205,7 +206,7 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_cli_profile(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (anciennes)
+## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (ancienne approche)
 
 Dans la version précédente du kit de développement logiciel (SDK), la bibliothèque ADAL n’était pas encore disponible, et nous fournissions une classe `UserPassCredentials`. Elle est déconseillée et ne doit plus être utilisée.
 
@@ -216,6 +217,6 @@ Cet exemple montre un scénario utilisateur/mot de passe. Il ne prend pas en cha
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```
