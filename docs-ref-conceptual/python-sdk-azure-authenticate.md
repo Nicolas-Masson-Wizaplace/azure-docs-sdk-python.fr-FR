@@ -35,13 +35,13 @@ L’exemple suivant utilise un [principal de service](https://docs.microsoft.com
 ```python
     from azure.common.credentials import ServicePrincipalCredentials
 
-    # ID du tenant de votre souscription Azure
+    # Tenant ID for your Azure Subscription
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # App ID de votre Service Principal
+    # Your Service Principal App ID
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Mot de passe de votre Service Principal
+    # Your Service Principal Password
     KEY = 'password'
 
     credentials = ServicePrincipalCredentials(
@@ -57,13 +57,13 @@ L’exemple suivant utilise un [principal de service](https://docs.microsoft.com
     from azure.common.credentials import ServicePrincipalCredentials
     from msrestazure.azure_cloud import AZURE_CHINA_CLOUD
 
-    # ID du tenant de votre souscription Azure
+    # Tenant ID for your Azure Subscription
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # App ID de votre Service Principal
+    # Your Service Principal App ID
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Mot de passe de votre Service Principal
+    # Your Service Principal Password
     KEY = 'password'
 
     credentials = ServicePrincipalCredentials(
@@ -81,13 +81,13 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
     from msrestazure.azure_active_directory import AdalAuthentication
     from msrestazure.azure_cloud import AZURE_PUBLIC_CLOUD
 
-    # ID du tenant de votre souscription Azure
+    # Tenant ID for your Azure Subscription
     TENANT_ID = 'ABCDEFGH-1234-1234-1234-ABCDEFGHIJKL'
 
-    # App ID de votre Service Principal
+    # Your Service Principal App ID
     CLIENT = 'a2ab11af-01aa-4759-8345-7803287dbd39'
 
-    # Mot de passe de votre Service Principal
+    # Your Service Principal Password
     KEY = 'password'
 
     LOGIN_ENDPOINT = AZURE_PUBLIC_CLOUD.endpoints.active_directory
@@ -109,7 +109,7 @@ Créez ensuite un objet de type `ComputeManagementClient` pour commencer à util
 ```python
 from azure.mgmt.compute import ComputeManagementClient
 
-# Votre identifiant de souscription Azure
+# Your Azure Subscription ID
 subscription_id = '33333333-3333-3333-3333-333333333333'
 
 client = ComputeManagementClient(credentials, subscription_id)
@@ -168,20 +168,20 @@ MSI est un moyen simple pour une ressource sous Azure d’utiliser le Kit de dé
 from msrestazure.azure_active_directory import MSIAuthentication
 from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
-    # Créer une instance de MSIAuthentication
+    # Create MSI Authentication
     credentials = MSIAuthentication()
 
 
-    # Créer un client de souscription
+    # Create a Subscription Client
     subscription_client = SubscriptionClient(credentials)
     subscription = next(subscription_client.subscriptions.list())
     subscription_id = subscription.subscription_id
 
-    # Créer un client de gestion de ressource
+    # Create a Resource Management client
     resource_client = ResourceManagementClient(credentials, subscription_id)
 
     
-    # À titre d'exemple, nous listons les groupes de ressources. 
+    # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
     # La seule limite est le rôle et la politique assignés à ce jeton MSI.
     for resource_group in resource_client.resource_groups.list():
         print(resource_group.name)
