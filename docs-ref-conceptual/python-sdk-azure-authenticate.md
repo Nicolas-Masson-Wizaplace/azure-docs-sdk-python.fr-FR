@@ -1,7 +1,7 @@
 ---
-title: "S’authentifier avec les bibliothèques de gestion Azure pour Python"
-description: "S’authentifier avec un principal de service dans les bibliothèques de gestion Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, authentification, active directory, principal de service"
+title: S’authentifier avec les bibliothèques de gestion Azure pour Python
+description: S’authentifier avec un principal de service dans les bibliothèques de gestion Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, authentification, active directory, principal de service
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/14/2018
+ms.locfileid: "29318801"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>S’authentifier avec les bibliothèques de gestion Azure pour Python
 
@@ -104,7 +105,7 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
 
 Tous les appels valides ADAL peuvent être utilisés avec la classe `AdalAuthentication`.
 
-Créez ensuite un objet de client pour commencer à utiliser l’API :
+Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
@@ -205,7 +206,7 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_cli_profile(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (anciennes)
+## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (ancienne approche)
 
 Dans la version précédente du kit de développement logiciel (SDK), la bibliothèque ADAL n’était pas encore disponible, et nous fournissions une classe `UserPassCredentials`. Elle est déconseillée et ne doit plus être utilisée.
 
