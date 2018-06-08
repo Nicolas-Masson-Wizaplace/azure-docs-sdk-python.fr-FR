@@ -37,13 +37,13 @@ Consultez la section relative à [l’authentification de la gestion de ressourc
 from azure.mgmt.authorization import AuthorizationManagementClient
 from azure.common.credentials import UserPassCredentials
 
-# Replace this with your subscription id
+# Remplacez la valeur ci-dessous par votre identifiant de souscription
 subscription_id = '33333333-3333-3333-3333-333333333333'
 
-# See above for details on creating different types of AAD credentials
+# Consultez plus haut les détails de la création des différents types d'informations d'identification pour AAD
 credentials = UserPassCredentials(
-    'user@domain.com',  # Your user
-    'my_password',      # Your password
+    'user@domain.com',  # Votre nom d'utilisateur
+    'my_password'      # Votre mot de passe
 )
 
 authorization_client = AuthorizationManagementClient(
@@ -54,7 +54,7 @@ authorization_client = AuthorizationManagementClient(
 
 ## <a name="check-permissions-for-a-resource-group"></a>Vérifier les autorisations d’un groupe de ressources
 
-Le code suivant vérifie les autorisations dans un groupe de ressources donné.
+Le code suivant vérifie les autorisations d'un groupe de ressources donné.
 Pour créer ou gérer des groupes de ressources, consultez la section relative à la [gestion des ressources](/python/api/overview/azure/azure.mgmt.resource).
 
 ```python
@@ -64,7 +64,7 @@ group_name = 'myresourcegroup'
 permissions = self.authorization_client.permissions.list_for_resource_group(
     group_name
 )
-# permissions is a iterable of Permissions instances
+# permissions est un itérable d'instances de type Permissions
 ```
 
 > [!div class="nextstepaction"]
