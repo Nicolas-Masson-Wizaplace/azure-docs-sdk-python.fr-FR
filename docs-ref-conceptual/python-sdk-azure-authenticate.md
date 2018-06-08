@@ -1,4 +1,4 @@
----
+﻿---
 title: S’authentifier avec les bibliothèques de gestion Azure pour Python
 description: S’authentifier avec un principal de service dans les bibliothèques de gestion Azure pour Python
 keywords: Azure, Python, Kit de développement logiciel (SDK), API, authentification, active directory, principal de service
@@ -105,7 +105,7 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
 
 Tous les appels valides ADAL peuvent être utilisés avec la classe `AdalAuthentication`.
 
-Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
+Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
@@ -183,6 +183,7 @@ from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
     
     # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
+    # La seule limite est le rôle et la politique assignés à ce jeton MSI.
     for resource_group in resource_client.resource_groups.list():
         print(resource_group.name)
 
@@ -217,6 +218,6 @@ Cet exemple montre un scénario utilisateur/mot de passe. Il ne prend pas en cha
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```
