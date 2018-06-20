@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de machines virtuelles Azure pour Python"
-description: 
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, Calcul, Machines virtuelles"
+title: Bibliothèques de machines virtuelles Azure pour Python
+description: ''
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, Calcul, Machines virtuelles
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478822"
 ---
 # <a name="azure-virtual-machine-libraries"></a><span data-ttu-id="e3198-103">Bibliothèques de machines virtuelle Azure</span><span class="sxs-lookup"><span data-stu-id="e3198-103">Azure virtual machine libraries</span></span>
 

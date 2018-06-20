@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de recherche Azure pour Python"
-description: "Références sur les bibliothèques de recherche Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, recherche"
+title: Bibliothèques de recherche Azure pour Python
+description: Références sur les bibliothèques de recherche Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, recherche
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478812"
 ---
 # <a name="azure-search-libraries-for-python"></a><span data-ttu-id="b619f-104">Bibliothèques de recherche Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="b619f-104">Azure Search libraries for python</span></span>
 

@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Media Services pour Python"
-description: "Références sur les bibliothèques Azure Media Services pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, Media Services"
+title: Bibliothèques Azure Media Services pour Python
+description: Références sur les bibliothèques Azure Media Services pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, Media Services
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479192"
 ---
 # <a name="azure-media-services-libraries-for-python"></a><span data-ttu-id="16cfc-104">Bibliothèques Azure Media Services pour Python</span><span class="sxs-lookup"><span data-stu-id="16cfc-104">Azure Media Services libraries for python</span></span>
 

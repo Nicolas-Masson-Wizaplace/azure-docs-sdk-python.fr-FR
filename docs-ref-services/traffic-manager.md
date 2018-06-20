@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure Traffic Manager pour Python"
-description: "Référence sur les bibliothèques Azure Traffic Manager pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, Traffic Manager"
+title: Bibliothèques Azure Traffic Manager pour Python
+description: Référence sur les bibliothèques Azure Traffic Manager pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, Traffic Manager
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478942"
 ---
 # <a name="azure-traffic-manager-libraries-for-python"></a><span data-ttu-id="d0ac4-104">Bibliothèques Azure Traffic Manager pour Python</span><span class="sxs-lookup"><span data-stu-id="d0ac4-104">Azure Traffic Manager libraries for python</span></span>
 

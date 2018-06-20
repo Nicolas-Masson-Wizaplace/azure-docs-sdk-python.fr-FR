@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure IoT Hub pour Python"
-description: "Références sur les bibliothèques Azure IoT Hub pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, IoT Hub"
+title: Bibliothèques Azure IoT Hub pour Python
+description: Références sur les bibliothèques Azure IoT Hub pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, IoT Hub
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478772"
 ---
 # <a name="azure-iot-hub-libraries-for-python"></a><span data-ttu-id="ed85b-104">Bibliothèques Azure IoT Hub pour Python</span><span class="sxs-lookup"><span data-stu-id="ed85b-104">Azure IoT Hub libraries for python</span></span>
 

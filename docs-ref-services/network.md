@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de réseau Azure pour Python"
-description: "Références sur les bibliothèques de réseau Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, réseau"
+title: Bibliothèques de réseau Azure pour Python
+description: Références sur les bibliothèques de réseau Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, réseau
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479072"
 ---
 # <a name="azure-network-libraries-for-python"></a><span data-ttu-id="4708f-104">Bibliothèques de réseau Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="4708f-104">Azure Network libraries for python</span></span>
 
