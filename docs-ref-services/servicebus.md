@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Service Bus pour Python"
-description: "Consulter la documentation sur les bibliothèques de client et de gestion Python pour Service Bus"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, messagerie, pubsub, pub-sub, répartiteur de messages"
+title: Bibliothèques Service Bus pour Python
+description: Consulter la documentation sur les bibliothèques de client et de gestion Python pour Service Bus
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, messagerie, pubsub, pub-sub, répartiteur de messages
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -14,6 +14,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551592"
 ---
 # <a name="service-bus-libraries-for-python"></a>Bibliothèques Service Bus pour Python
 

@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure PowerBI pour Python"
-description: "Références sur les bibliothèques Azure PowerBI pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, PowerBI"
+title: Bibliothèques Azure PowerBI pour Python
+description: Références sur les bibliothèques Azure PowerBI pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, PowerBI
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479022"
 ---
 # <a name="azure-powerbi-libraries-for-python"></a>Bibliothèques Azure PowerBI pour Python
 

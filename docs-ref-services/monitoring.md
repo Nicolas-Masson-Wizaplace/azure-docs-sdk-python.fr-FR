@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de surveillance Azure pour Python"
-description: "Référence sur les bibliothèques de surveillance Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, surveillance"
+title: Bibliothèques de surveillance Azure pour Python
+description: Référence sur les bibliothèques de surveillance Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, surveillance
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479062"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Bibliothèques de surveillance Azure pour Python
 

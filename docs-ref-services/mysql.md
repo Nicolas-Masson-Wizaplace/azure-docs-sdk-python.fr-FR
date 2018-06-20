@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure MySQL pour Python"
-description: 
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, SQL, base de données, MySQL"
+title: Bibliothèques Azure MySQL pour Python
+description: ''
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, SQL, base de données, MySQL
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479182"
 ---
 # <a name="azure-mysql-libraries-for-python"></a>Bibliothèques Azure MySQL pour Python 
 

@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de ressources Azure pour Python"
-description: 
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, ressources"
+title: Bibliothèques de ressources Azure pour Python
+description: ''
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, ressources
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909392"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Bibliothèques de ressources Azure pour Python 
 

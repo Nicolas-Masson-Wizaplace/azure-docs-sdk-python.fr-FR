@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de facturation Azure pour Python"
-description: "Référence sur les bibliothèques de facturation Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, facturation"
+title: Bibliothèques de facturation Azure pour Python
+description: Référence sur les bibliothèques de facturation Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, facturation
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478872"
 ---
 # <a name="azure-billing-libraries-for-python"></a>Bibliothèques de facturation Azure pour Python
 

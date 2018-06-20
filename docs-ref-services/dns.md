@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques Azure DNS pour Python"
-description: "Références sur les bibliothèques Azure DNS pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, DNS"
+title: Bibliothèques Azure DNS pour Python
+description: Références sur les bibliothèques Azure DNS pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, DNS
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551562"
 ---
 # <a name="azure-dns-libraries-for-python"></a>Bibliothèques Azure DNS pour Python
 

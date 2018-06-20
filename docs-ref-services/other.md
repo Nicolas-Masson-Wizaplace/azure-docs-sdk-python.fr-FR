@@ -1,7 +1,7 @@
 ---
-title: "Autres bibliothèques Azure pour Python"
-description: "Références sur les autres bibliothèques Azure pour Python"
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, autres"
+title: Autres bibliothèques Azure pour Python
+description: Références sur les autres bibliothèques Azure pour Python
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, autres
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909362"
 ---
 # <a name="azure-other-libraries-for-python"></a>Autres bibliothèques Azure pour Python
 
