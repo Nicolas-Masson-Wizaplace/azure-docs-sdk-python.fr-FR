@@ -1,4 +1,4 @@
-﻿---
+---
 title: S’authentifier avec les bibliothèques de gestion Azure pour Python
 description: S’authentifier avec un principal de service dans les bibliothèques de gestion Azure pour Python
 keywords: Azure, Python, Kit de développement logiciel (SDK), API, authentification, active directory, principal de service
@@ -10,12 +10,12 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
-ms.locfileid: "29318801"
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720050"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>S’authentifier avec les bibliothèques de gestion Azure pour Python
 
@@ -105,7 +105,7 @@ Si vous avez besoin de plus de contrôle, nous vous recommandons d’utiliser [A
 
 Tous les appels valides ADAL peuvent être utilisés avec la classe `AdalAuthentication`.
 
-Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
+Créez ensuite un objet de type `ComputeManagementClient` pour commencer à utiliser l’API :
 
 ```python
 from azure.mgmt.compute import ComputeManagementClient
@@ -183,7 +183,6 @@ from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
 
     
     # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
-    # La seule limite est le rôle et la politique assignés à ce jeton MSI.
     for resource_group in resource_client.resource_groups.list():
         print(resource_group.name)
 
@@ -207,7 +206,7 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_cli_profile(ComputeManagementClient)
 ```
 
-## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (ancienne approche)
+## <a name="mgmt-auth-legacy"></a>S’authentifier à l’aide d’informations d’identification de jeton (anciennes)
 
 Dans la version précédente du kit de développement logiciel (SDK), la bibliothèque ADAL n’était pas encore disponible, et nous fournissions une classe `UserPassCredentials`. Elle est déconseillée et ne doit plus être utilisée.
 

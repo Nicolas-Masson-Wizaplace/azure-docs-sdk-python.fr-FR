@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques de stockage Azure pour Python"
-description: 
-keywords: "Azure, Python, Kit de développement logiciel (SDK), API, stockage"
+title: Bibliothèques de stockage Azure pour Python
+description: ''
+keywords: Azure, Python, Kit de développement logiciel (SDK), API, stockage
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -11,15 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
-ms.openlocfilehash: e00e821ff3e806a994fa8d96aae50c35eeeb8392
-ms.sourcegitcommit: 5ab15a7214082d16f339a13e4ae7735b3a57a9aa
+ms.openlocfilehash: e45b12af9e026e0f6390556813385d86784feaa4
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720060"
 ---
 # <a name="azure-storage-libraries-for-python"></a>Bibliothèques de stockage Azure pour Python
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 - Lire et écrire des objets et des fichiers à partir du [Stockage Blob Azure](https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-blob-storage)
 - Envoyer et recevoir des messages entre des applications connectées par le cloud avec le [stockage de files d’attente Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
 - Lire et écrire des données structurées volumineuses avec le [stockage de tables Azure](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage) 
@@ -43,8 +44,10 @@ pip install azure-storage-blob
 pip install azure-mgmt-storage
 ```
 
-## <a name="example"></a>exemples
+## <a name="example"></a>Exemples
 ```python
+from azure.storage.blob import BlockBlobService
+
 blob_service = BlockBlobService(account_name, account_key)
 
 blob_service.create_container(

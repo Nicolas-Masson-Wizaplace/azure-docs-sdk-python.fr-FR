@@ -1,7 +1,7 @@
 ---
-title: "Bibliothèques d’autorisation Azure pour Python"
-description: "Références sur les bibliothèques d’autorisation Azure pour Python"
-keywords: "Azure, python, Kit de développement logiciel (SDK), API, autorisation"
+title: Bibliothèques d’autorisation Azure pour Python
+description: Références sur les bibliothèques d’autorisation Azure pour Python
+keywords: Azure, python, Kit de développement logiciel (SDK), API, autorisation
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -11,11 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: ba8814b22ee07a27181b214c6cc49607d4bc5d50
-ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
+ms.openlocfilehash: a3db490357ec35c0780d7dd16114b9041458373d
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720040"
 ---
 # <a name="azure-authorization-libraries-for-python"></a>Bibliothèques d’autorisation Azure pour Python
 
@@ -37,13 +38,13 @@ Consultez la section relative à [l’authentification de la gestion de ressourc
 from azure.mgmt.authorization import AuthorizationManagementClient
 from azure.common.credentials import UserPassCredentials
 
-# Remplacez la valeur ci-dessous par votre identifiant de souscription
+# Replace this with your subscription id
 subscription_id = '33333333-3333-3333-3333-333333333333'
 
-# Consultez plus haut les détails de la création des différents types d'informations d'identification pour AAD
+# See above for details on creating different types of AAD credentials
 credentials = UserPassCredentials(
-    'user@domain.com',  # Votre nom d'utilisateur
-    'my_password'      # Votre mot de passe
+    'user@domain.com',  # Your user
+    'my_password'       # Your password
 )
 
 authorization_client = AuthorizationManagementClient(
@@ -54,7 +55,7 @@ authorization_client = AuthorizationManagementClient(
 
 ## <a name="check-permissions-for-a-resource-group"></a>Vérifier les autorisations d’un groupe de ressources
 
-Le code suivant vérifie les autorisations d'un groupe de ressources donné.
+Le code suivant vérifie les autorisations dans un groupe de ressources donné.
 Pour créer ou gérer des groupes de ressources, consultez la section relative à la [gestion des ressources](/python/api/overview/azure/azure.mgmt.resource).
 
 ```python
@@ -64,7 +65,7 @@ group_name = 'myresourcegroup'
 permissions = self.authorization_client.permissions.list_for_resource_group(
     group_name
 )
-# permissions est un itérable d'instances de type Permissions
+# permissions is a iterable of Permissions instances
 ```
 
 > [!div class="nextstepaction"]
