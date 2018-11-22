@@ -11,16 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 47252ca3b2f5c6087277bac3735025f0dbabbdd8
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: f468f844becc2f0fe07d892c725c00df4669f4e3
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479072"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52273025"
 ---
 # <a name="azure-network-libraries-for-python"></a>Bibliothèques de réseau Azure pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le [réseau virtuel Azure](/azure/virtual-network/virtual-networks-overview) vous permet de connecter des ressources Azure, et de les connecter à votre réseau local.
 
@@ -38,7 +38,7 @@ Installez le package de gestion avec pip.
 pip install azure-mgmt-network
 ```
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 
 Créez un réseau virtuel et un sous-réseau associé.
 

@@ -11,16 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6a073f9943b1f5af962546931e9d13372720e193
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 2d4172fa206b89437cca88fb2c5d0a7965be4e9b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479062"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277171"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Bibliothèques de surveillance Azure pour Python
 
-## <a name="overview"></a>Vue d'ensemble 
+## <a name="overview"></a>Vue d’ensemble 
 L’analyse fournit des données visant à garantir que votre application reste opérationnelle et soit exécutée en toute intégrité. Elle vous permet également de parer à des problèmes potentiels ou de résoudre des problèmes déjà survenus. En outre, vous pouvez utiliser les données d’analyse pour obtenir des informations détaillées sur votre application. Ces connaissances peuvent vous aider à améliorer les performances de l’application ou sa facilité de gestion, ou à automatiser des actions qui exigeraient normalement une intervention manuelle.
 
 En savoir plus sur Azure Monitor [en cliquant ici](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor). 

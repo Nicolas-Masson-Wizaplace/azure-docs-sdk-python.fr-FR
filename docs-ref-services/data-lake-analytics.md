@@ -11,16 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d779aca1f3a9e14f275385f93054a8e2f9c0c689
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: f1bba0556baf7c373a3584c2dae922e04fa76fc8
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478762"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52279262"
 ---
 # <a name="azure-data-lake-analytics-libraries-for-python"></a>Bibliothèques Azure Data Lake Analytics pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 Exécutez des travaux d’analyse Big Data mis à l’échelle de manière à obtenir des jeux de données conséquents avec [Azure Data Lake Analytics](/azure/data-lake-analytics/data-lake-analytics-overview).
 
 ## <a name="install-the-libraries"></a>Installer les bibliothèques
@@ -32,7 +32,7 @@ Utilisez l’API de gestion pour gérer les comptes, les travaux, les stratégie
 pip install azure-mgmt-datalake-analytics
 ```
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 Il s’agit d’un exemple de la création d’un compte Data Lake Analytics et de l’envoi d’un travail. 
 
 ```python

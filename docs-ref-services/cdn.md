@@ -11,16 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 92d6dd6ce55964bc48bb9bc654e8dec25f6b8344
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478882"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52275533"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Bibliothèques Azure CDN pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Le [réseau de distribution de contenu (CDN) Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) vous permet de mettre en cache du contenu web pour garantir une disponibilité de bande passante élevée dans le monde entier.
 
@@ -36,7 +36,7 @@ Installez le package de gestion via pip.
 pip install azure-mgmt-cdn
 ```
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 
 Création d’un profil CDN avec un seul point de terminaison défini :
 
