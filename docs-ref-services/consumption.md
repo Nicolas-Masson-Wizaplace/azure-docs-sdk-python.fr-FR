@@ -11,22 +11,22 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 69ce7bb5f10a2ab6c2a952b2023b71a9584397f4
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 7fe36157ae54b78f6daadf67f9833de64adb90ed
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478992"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277221"
 ---
-# <a name="azure-consumption-libraries-for-python"></a><span data-ttu-id="80ff4-104">Bibliothèques de consommation Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="80ff4-104">Azure Consumption libraries for python</span></span>
+# <a name="azure-consumption-libraries-for-python"></a><span data-ttu-id="c3918-104">Bibliothèques de consommation Azure pour Python</span><span class="sxs-lookup"><span data-stu-id="c3918-104">Azure Consumption libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="80ff4-105">Installer les bibliothèques</span><span class="sxs-lookup"><span data-stu-id="80ff4-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="c3918-105">Installer les bibliothèques</span><span class="sxs-lookup"><span data-stu-id="c3918-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="80ff4-106">gestion</span><span class="sxs-lookup"><span data-stu-id="80ff4-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="c3918-106">gestion</span><span class="sxs-lookup"><span data-stu-id="c3918-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-consumption
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="80ff4-107">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="80ff4-107">Explore the Management APIs</span></span>](/python/api/overview/azure/consumption/management)
+> [<span data-ttu-id="c3918-107">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="c3918-107">Explore the Management APIs</span></span>](/python/api/overview/azure/consumption/management)

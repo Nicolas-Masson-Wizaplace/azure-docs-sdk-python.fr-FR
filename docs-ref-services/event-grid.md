@@ -7,39 +7,37 @@ ms.author: liwong
 manager: routlaw
 ms.date: 08/21/2017
 ms.topic: article
-ms.prod: azure
-ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: e68504b3ba5834a145af1231eacc076e424a2256
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: bfaa1908295eb77531e399f1337acdeee512005f
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33901424"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276833"
 ---
-# <a name="event-grid-libraries-for-python"></a><span data-ttu-id="996ad-103">Bibliothèques Event Grid pour Python</span><span class="sxs-lookup"><span data-stu-id="996ad-103">Event Grid libraries for Python</span></span>
+# <a name="event-grid-libraries-for-python"></a><span data-ttu-id="ce4d2-103">Bibliothèques Event Grid pour Python</span><span class="sxs-lookup"><span data-stu-id="ce4d2-103">Event Grid libraries for Python</span></span>
 
 
-<span data-ttu-id="996ad-104">Azure Event Grid est un service de routage d’événement intelligent et entièrement géré qui permet une consommation d’événements uniforme à l’aide d’un modèle publication-abonnement.</span><span class="sxs-lookup"><span data-stu-id="996ad-104">Azure Event Grid is a fully-managed intelligent event routing service that allows for uniform event consumption using a publish-subscribe model.</span></span>
+<span data-ttu-id="ce4d2-104">Azure Event Grid est un service de routage d’événement intelligent et entièrement géré qui permet une consommation d’événements uniforme à l’aide d’un modèle publication-abonnement.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-104">Azure Event Grid is a fully-managed intelligent event routing service that allows for uniform event consumption using a publish-subscribe model.</span></span>
 
-<span data-ttu-id="996ad-105">[En savoir plus](/azure/event-grid/overview) sur Azure Event Grid et la prise en main avec le [didacticiel des événements de stockage d’objets Blob Azure](/azure/storage/blobs/storage-blob-event-quickstart).</span><span class="sxs-lookup"><span data-stu-id="996ad-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart).</span></span> 
+<span data-ttu-id="ce4d2-105">[En savoir plus](/azure/event-grid/overview) sur Azure Event Grid et la prise en main avec le [didacticiel des événements de stockage d’objets Blob Azure](/azure/storage/blobs/storage-blob-event-quickstart).</span><span class="sxs-lookup"><span data-stu-id="ce4d2-105">[Learn more](/azure/event-grid/overview) about Azure Event Grid and get started with the [Azure Blob storage event tutorial](/azure/storage/blobs/storage-blob-event-quickstart).</span></span> 
 
-## <a name="publish-sdk"></a><span data-ttu-id="996ad-106">Kit de développement logiciel de publication</span><span class="sxs-lookup"><span data-stu-id="996ad-106">Publish SDK</span></span>
+## <a name="publish-sdk"></a><span data-ttu-id="ce4d2-106">Kit de développement logiciel de publication</span><span class="sxs-lookup"><span data-stu-id="ce4d2-106">Publish SDK</span></span>
 
-<span data-ttu-id="996ad-107">Authentifiez, créez et gérez et publiez des événements dans des rubriques à l’aide du kit de développement logiciel de publication de Azure Event Grid.</span><span class="sxs-lookup"><span data-stu-id="996ad-107">Authenticate, create, handle, and publish events to topics using the Azure Event Grid publish SDK.</span></span>
+<span data-ttu-id="ce4d2-107">Authentifiez, créez et gérez et publiez des événements dans des rubriques à l’aide du kit de développement logiciel de publication de Azure Event Grid.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-107">Authenticate, create, handle, and publish events to topics using the Azure Event Grid publish SDK.</span></span>
 
-### <a name="installation"></a><span data-ttu-id="996ad-108">Installation</span><span class="sxs-lookup"><span data-stu-id="996ad-108">Installation</span></span> 
+### <a name="installation"></a><span data-ttu-id="ce4d2-108">Installation</span><span class="sxs-lookup"><span data-stu-id="ce4d2-108">Installation</span></span> 
 
-<span data-ttu-id="996ad-109">Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :</span><span class="sxs-lookup"><span data-stu-id="996ad-109">Install the package with [pip](https://pip.pypa.io/en/stable/quickstart/):</span></span>
+<span data-ttu-id="ce4d2-109">Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :</span><span class="sxs-lookup"><span data-stu-id="ce4d2-109">Install the package with [pip](https://pip.pypa.io/en/stable/quickstart/):</span></span>
 
 ```bash
 pip install azure-eventgrid
 ```
 
-### <a name="example"></a><span data-ttu-id="996ad-110">Exemples</span><span class="sxs-lookup"><span data-stu-id="996ad-110">Example</span></span> 
+### <a name="example"></a><span data-ttu-id="ce4d2-110">Exemples</span><span class="sxs-lookup"><span data-stu-id="ce4d2-110">Example</span></span> 
 
-<span data-ttu-id="996ad-111">Le code suivant publie un événement dans une rubrique.</span><span class="sxs-lookup"><span data-stu-id="996ad-111">The following code publishes an event to a topic.</span></span> <span data-ttu-id="996ad-112">Vous pouvez récupérer la clé de la rubrique et le point de terminaison à partir du portail Azure ou via Azure CLI :</span><span class="sxs-lookup"><span data-stu-id="996ad-112">You can retrieve the topic key and endpoint through the Azure Portal or through the Azure CLI:</span></span>
+<span data-ttu-id="ce4d2-111">Le code suivant publie un événement dans une rubrique.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-111">The following code publishes an event to a topic.</span></span> <span data-ttu-id="ce4d2-112">Vous pouvez récupérer la clé de la rubrique et le point de terminaison à partir du portail Azure ou via Azure CLI :</span><span class="sxs-lookup"><span data-stu-id="ce4d2-112">You can retrieve the topic key and endpoint through the Azure Portal or through the Azure CLI:</span></span>
 
 ```azurecli-interactive
 endpoint=$(az eventgrid topic show --name <topic_name> -g gridResourceGroup --query "endpoint" --output tsv)
@@ -73,24 +71,24 @@ def publish_event(self):
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="996ad-113">Explorer les API clientes</span><span class="sxs-lookup"><span data-stu-id="996ad-113">Explore the Client APIs</span></span>](/python/api/overview/azure/eventgrid/client)
+> [<span data-ttu-id="ce4d2-113">Explorer les API clientes</span><span class="sxs-lookup"><span data-stu-id="ce4d2-113">Explore the Client APIs</span></span>](/python/api/overview/azure/eventgrid/client)
 
-## <a name="management-sdk"></a><span data-ttu-id="996ad-114">Kit de développement logiciel (SDK) de gestion</span><span class="sxs-lookup"><span data-stu-id="996ad-114">Management SDK</span></span>
+## <a name="management-sdk"></a><span data-ttu-id="ce4d2-114">Kit de développement logiciel (SDK) de gestion</span><span class="sxs-lookup"><span data-stu-id="ce4d2-114">Management SDK</span></span>
 
-<span data-ttu-id="996ad-115">Créez, mettez à jour et supprimez des instances, des rubriques et des abonnements Event Grid avec le kit de développement logiciel de gestion.</span><span class="sxs-lookup"><span data-stu-id="996ad-115">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
+<span data-ttu-id="ce4d2-115">Créez, mettez à jour et supprimez des instances, des rubriques et des abonnements Event Grid avec le kit de développement logiciel de gestion.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-115">Create, update, or delete Event Grid instances, topics, and subscriptions with the management SDK.</span></span>
 
-### <a name="installation"></a><span data-ttu-id="996ad-116">Installation</span><span class="sxs-lookup"><span data-stu-id="996ad-116">Installation</span></span> 
+### <a name="installation"></a><span data-ttu-id="ce4d2-116">Installation</span><span class="sxs-lookup"><span data-stu-id="ce4d2-116">Installation</span></span> 
 
-<span data-ttu-id="996ad-117">Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :</span><span class="sxs-lookup"><span data-stu-id="996ad-117">Install the package with [pip](https://pip.pypa.io/en/stable/quickstart/):</span></span>
+<span data-ttu-id="ce4d2-117">Installez le package avec [pip](https://pip.pypa.io/en/stable/quickstart/) :</span><span class="sxs-lookup"><span data-stu-id="ce4d2-117">Install the package with [pip](https://pip.pypa.io/en/stable/quickstart/):</span></span>
 
 ```bash
 pip install azure-mgmt-eventgrid
 ```
 
-### <a name="example"></a><span data-ttu-id="996ad-118">Exemples</span><span class="sxs-lookup"><span data-stu-id="996ad-118">Example</span></span>
+### <a name="example"></a><span data-ttu-id="ce4d2-118">Exemples</span><span class="sxs-lookup"><span data-stu-id="ce4d2-118">Example</span></span>
 
-<span data-ttu-id="996ad-119">La commande suivante crée une rubrique personnalisée et abonne un point de terminaison à la rubrique.</span><span class="sxs-lookup"><span data-stu-id="996ad-119">The following creates a custom topic and subscribes an endpoint to the topic.</span></span> <span data-ttu-id="996ad-120">Le code envoie ensuite un événement à la rubrique via le protocole HTTPS.</span><span class="sxs-lookup"><span data-stu-id="996ad-120">The code then sends an event to the topic through HTTPS.</span></span>
-<span data-ttu-id="996ad-121">RequestBin est un outil tiers en open-source qui vous permet de créer un point de terminaison et d’afficher les requêtes qui lui sont envoyées.</span><span class="sxs-lookup"><span data-stu-id="996ad-121">RequestBin is an open source, third-party tool that enables you to create an endpoint, and view requests that are sent to it.</span></span> <span data-ttu-id="996ad-122">Accédez à [RequestBin](https://requestb.in/), puis cliquez sur **Créer un RequestBin**.</span><span class="sxs-lookup"><span data-stu-id="996ad-122">Go to [RequestBin](https://requestb.in/), and click **Create a RequestBin**.</span></span> <span data-ttu-id="996ad-123">Copiez l’URL du fichier bin, dont vous avez besoin pour vous abonner à la rubrique.</span><span class="sxs-lookup"><span data-stu-id="996ad-123">Copy the bin URL, because you need it when subscribing to the topic.</span></span>
+<span data-ttu-id="ce4d2-119">La commande suivante crée une rubrique personnalisée et abonne un point de terminaison à la rubrique.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-119">The following creates a custom topic and subscribes an endpoint to the topic.</span></span> <span data-ttu-id="ce4d2-120">Le code envoie ensuite un événement à la rubrique via le protocole HTTPS.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-120">The code then sends an event to the topic through HTTPS.</span></span>
+<span data-ttu-id="ce4d2-121">RequestBin est un outil tiers en open-source qui vous permet de créer un point de terminaison et d’afficher les requêtes qui lui sont envoyées.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-121">RequestBin is an open source, third-party tool that enables you to create an endpoint, and view requests that are sent to it.</span></span> <span data-ttu-id="ce4d2-122">Accédez à [RequestBin](https://requestb.in/), puis cliquez sur **Créer un RequestBin**.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-122">Go to [RequestBin](https://requestb.in/), and click **Create a RequestBin**.</span></span> <span data-ttu-id="ce4d2-123">Copiez l’URL du fichier bin, dont vous avez besoin pour vous abonner à la rubrique.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-123">Copy the bin URL, because you need it when subscribing to the topic.</span></span>
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient
@@ -139,16 +137,16 @@ r = requests.post(url, data=s, headers=headers)
 print(r.status_code)
 print(r.content)
 ```
-<span data-ttu-id="996ad-124">Accédez à l’URL RequestBin créée précédemment pour voir l’événement envoyé.</span><span class="sxs-lookup"><span data-stu-id="996ad-124">Browse to the RequestBin URL created earlier to see the event just sent.</span></span>
+<span data-ttu-id="ce4d2-124">Accédez à l’URL RequestBin créée précédemment pour voir l’événement envoyé.</span><span class="sxs-lookup"><span data-stu-id="ce4d2-124">Browse to the RequestBin URL created earlier to see the event just sent.</span></span>
 
-<span data-ttu-id="996ad-125">Supprimer des ressources</span><span class="sxs-lookup"><span data-stu-id="996ad-125">Clean up resources</span></span>
+<span data-ttu-id="ce4d2-125">Supprimer des ressources</span><span class="sxs-lookup"><span data-stu-id="ce4d2-125">Clean up resources</span></span>
 ```azurecli-interactive
 az group delete --name gridResourceGroup
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="996ad-126">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="996ad-126">Explore the Management APIs</span></span>](/python/api/overview/azure/eventgrid/management)
+> [<span data-ttu-id="ce4d2-126">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="ce4d2-126">Explore the Management APIs</span></span>](/python/api/overview/azure/eventgrid/management)
 
-## <a name="learn-more"></a><span data-ttu-id="996ad-127">En savoir plus</span><span class="sxs-lookup"><span data-stu-id="996ad-127">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="ce4d2-127">En savoir plus</span><span class="sxs-lookup"><span data-stu-id="ce4d2-127">Learn more</span></span>
 
-[<span data-ttu-id="996ad-128">Recevoir des événements avec le kit de développement logiciel Event Grid</span><span class="sxs-lookup"><span data-stu-id="996ad-128">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
+[<span data-ttu-id="ce4d2-128">Recevoir des événements avec le kit de développement logiciel Event Grid</span><span class="sxs-lookup"><span data-stu-id="ce4d2-128">Receive events using the Event Grid SDK</span></span>](/azure/event-grid/receive-events)
