@@ -9,34 +9,34 @@ ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
-ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
+ms.openlocfilehash: c2f3ea017a8864d4d2fb74a439c420f1f0313082
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204136"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276793"
 ---
-# <a name="azure-cosmos-db-libraries-for-python"></a><span data-ttu-id="64419-104">Bibliothèques Azure Cosmos DB pour Python</span><span class="sxs-lookup"><span data-stu-id="64419-104">Azure Cosmos DB libraries for Python</span></span>
+# <a name="azure-cosmos-db-libraries-for-python"></a><span data-ttu-id="446cc-104">Bibliothèques Azure Cosmos DB pour Python</span><span class="sxs-lookup"><span data-stu-id="446cc-104">Azure Cosmos DB libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="64419-105">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="64419-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="446cc-105">Vue d’ensemble</span><span class="sxs-lookup"><span data-stu-id="446cc-105">Overview</span></span>
 
-<span data-ttu-id="64419-106">Utilisez Azure Cosmos DB dans vos applications Python pour stocker et interroger des documents JSON dans un magasin de données NoSQL.</span><span class="sxs-lookup"><span data-stu-id="64419-106">Use Azure Cosmos DB in your Python applications to store and query JSON documents in a NoSQL data store.</span></span>
+<span data-ttu-id="446cc-106">Utilisez Azure Cosmos DB dans vos applications Python pour stocker et interroger des documents JSON dans un magasin de données NoSQL.</span><span class="sxs-lookup"><span data-stu-id="446cc-106">Use Azure Cosmos DB in your Python applications to store and query JSON documents in a NoSQL data store.</span></span>
 
-<span data-ttu-id="64419-107">Apprenez-en davantage sur [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).</span><span class="sxs-lookup"><span data-stu-id="64419-107">Learn more about [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).</span></span>
+<span data-ttu-id="446cc-107">Apprenez-en davantage sur [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).</span><span class="sxs-lookup"><span data-stu-id="446cc-107">Learn more about [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="64419-108">Bibliothèque cliente</span><span class="sxs-lookup"><span data-stu-id="64419-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="446cc-108">Bibliothèque cliente</span><span class="sxs-lookup"><span data-stu-id="446cc-108">Client library</span></span>
  ```bash
 pip install pydocumentdb
  ```
 
-## <a name="management-library"></a><span data-ttu-id="64419-109">Bibliothèque de gestion</span><span class="sxs-lookup"><span data-stu-id="64419-109">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="446cc-109">Bibliothèque de gestion</span><span class="sxs-lookup"><span data-stu-id="446cc-109">Management library</span></span>
 ```bash
 pip install azure-mgmt-cosmosdb
 ```
 
-### <a name="example"></a><span data-ttu-id="64419-110">Exemples</span><span class="sxs-lookup"><span data-stu-id="64419-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="446cc-110">Exemples</span><span class="sxs-lookup"><span data-stu-id="446cc-110">Example</span></span>
 
-<span data-ttu-id="64419-111">Trouver des documents correspondants dans Azure Cosmos DB à l’aide d’une interface de requête de type SQL :</span><span class="sxs-lookup"><span data-stu-id="64419-111">Find matching documents in Azure CosmosDB using a SQL-like query interface:</span></span>
+<span data-ttu-id="446cc-111">Trouver des documents correspondants dans Azure Cosmos DB à l’aide d’une interface de requête de type SQL :</span><span class="sxs-lookup"><span data-stu-id="446cc-111">Find matching documents in Azure CosmosDB using a SQL-like query interface:</span></span>
 
 ```python
 import pydocumentdb
@@ -80,10 +80,18 @@ results = list(result_iterable)
 print(results)
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="64419-112">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="64419-112">Explore the Management APIs</span></span>](/python/api/overview/azure/cosmosdb/management)
+> [<span data-ttu-id="446cc-112">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="446cc-112">Explore the Management APIs</span></span>](/python/api/overview/azure/cosmosdb/management)
 
-## <a name="samples"></a><span data-ttu-id="64419-113">Exemples</span><span class="sxs-lookup"><span data-stu-id="64419-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="446cc-113">Exemples</span><span class="sxs-lookup"><span data-stu-id="446cc-113">Samples</span></span>
 
-[<span data-ttu-id="64419-114">Développer une application Python à l’aide d’Azure Cosmos DB</span><span class="sxs-lookup"><span data-stu-id="64419-114">Develop a Python app using Azure Cosmos DB</span></span>](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
+* [<span data-ttu-id="446cc-114">Développer une application Python pour accéder à des données stockées dans un compte d’API SQL Azure Cosmos DB et les gérer</span><span class="sxs-lookup"><span data-stu-id="446cc-114">Develop a Python app to access and manage data stored in Azure Cosmos DB SQL API account</span></span>](https://github.com/Azure-Samples/azure-cosmos-db-python-getting-started.git)
+
+* [<span data-ttu-id="446cc-115">Développer une application Python pour accéder à des données stockées dans un compte d’API MongoDB Azure Cosmos DB et les gérer</span><span class="sxs-lookup"><span data-stu-id="446cc-115">Develop a Python app to access and manage data stored in Azure Cosmos DB MongoDB API account</span></span>](https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git)
+
+* [<span data-ttu-id="446cc-116">Développer une application Python pour accéder à des données stockées dans un compte d’API Gremlin Azure Cosmos DB et les gérer</span><span class="sxs-lookup"><span data-stu-id="446cc-116">Develop a Python app to access and manage data stored in Azure Cosmos DB Gremlin API account</span></span>](https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git)
+
+* [<span data-ttu-id="446cc-117">Développer une application Python pour accéder à des données stockées dans un compte d’API Cassandra Azure Cosmos DB et les gérer</span><span class="sxs-lookup"><span data-stu-id="446cc-117">Develop a Python app to access and manage data stored in Azure Cosmos DB Cassandra API account</span></span>](https://github.com/Azure-Samples/azure-cosmos-db-cassandra-python-getting-started.git)
+
+* [<span data-ttu-id="446cc-118">Développer une application Python pour accéder à des données stockées dans un compte d’API Table Azure Cosmos DB et les gérer</span><span class="sxs-lookup"><span data-stu-id="446cc-118">Develop a Python app to access and manage data stored in Azure Cosmos DB Table API account</span></span>](https://github.com/Azure-Samples/storage-python-getting-started.git)
 
 
