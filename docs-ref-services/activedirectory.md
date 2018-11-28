@@ -10,17 +10,16 @@ ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.service: active-directory
-ms.openlocfilehash: 78df70001dd0d55ac2c9c9da04fac6a51c5919e6
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 4cf4149dfbd8209020e3affc0d15ab870f8d9697
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478922"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276743"
 ---
 # <a name="azure-active-directory-libraries-for-python"></a>Bibliothèques Azure Active Directory pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Authentifiez des utilisateurs et contrôlez l’accès aux applications et aux API avec [Azure Active Directory](/azure/active-directory/active-directory-whatis).
 
@@ -32,9 +31,9 @@ Configurez l’authentification avec OAuth2, OpenID Connect ou Active Directory 
 pip install azure-graphrbac
 ```
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 > [!NOTE]
-> Vous devrez modifier le paramètre de ressource à l’adresse https://graph.windows.net lors de la création de l’instance d’informations d’identification
+> Vous devez remplacer le paramètre de ressource par https://graph.windows.net lors de la création de l’instance d’informations d’identification
 
 ```python
 from azure.graphrbac import GraphRbacManagementClient

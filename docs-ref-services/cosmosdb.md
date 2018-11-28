@@ -9,16 +9,16 @@ ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
-ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
+ms.openlocfilehash: c2f3ea017a8864d4d2fb74a439c420f1f0313082
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204136"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276793"
 ---
 # <a name="azure-cosmos-db-libraries-for-python"></a>Bibliothèques Azure Cosmos DB pour Python
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Utilisez Azure Cosmos DB dans vos applications Python pour stocker et interroger des documents JSON dans un magasin de données NoSQL.
 
@@ -84,6 +84,14 @@ print(results)
 
 ## <a name="samples"></a>Exemples
 
-[Développer une application Python à l’aide d’Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
+* [Développer une application Python pour accéder à des données stockées dans un compte d’API SQL Azure Cosmos DB et les gérer](https://github.com/Azure-Samples/azure-cosmos-db-python-getting-started.git)
+
+* [Développer une application Python pour accéder à des données stockées dans un compte d’API MongoDB Azure Cosmos DB et les gérer](https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git)
+
+* [Développer une application Python pour accéder à des données stockées dans un compte d’API Gremlin Azure Cosmos DB et les gérer](https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git)
+
+* [Développer une application Python pour accéder à des données stockées dans un compte d’API Cassandra Azure Cosmos DB et les gérer](https://github.com/Azure-Samples/azure-cosmos-db-cassandra-python-getting-started.git)
+
+* [Développer une application Python pour accéder à des données stockées dans un compte d’API Table Azure Cosmos DB et les gérer](https://github.com/Azure-Samples/storage-python-getting-started.git)
 
 
