@@ -1,4 +1,4 @@
-# <a name="azure-python-sdk-documentation"></a>Documentation sur le Kit de développement logiciel (SDK) Python Azure
+﻿# <a name="azure-python-sdk-documentation"></a>Documentation sur le Kit de développement logiciel (SDK) Python Azure
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite de Microsoft Open Source
 Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
