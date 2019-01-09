@@ -7,18 +7,18 @@ ms.author: tyfox
 ms.date: 09/18/2018
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 42e1e36b5854fda93188564be3ed3064b9ba4435
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 9447d50fd734bd9221accbf470a456210bb57a7f
+ms.sourcegitcommit: e2e4b1ecfac9804a72973477634128061c1ec990
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277469"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53455106"
 ---
 # <a name="hdinsight-python-management-sdk-preview"></a>Préversion du Kit de développement logiciel (SDK) Python HDInsight
 
 ## <a name="overview"></a>Vue d’ensemble
 
-Le Kit de développement logiciel (SDK) Python HDInsight fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations pour créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés de clusters HDInsight, et bien plus encore.
+Le Kit de développement logiciel (SDK) Python HDInsight fournit des classes et des méthodes qui vous permettent de gérer vos clusters HDInsight. Il inclut des opérations permettant de créer, supprimer, mettre à jour, répertorier, mettre à l’échelle, exécuter des actions de script, surveiller, obtenir des propriétés des clusters HDInsight, et bien plus encore.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -37,7 +37,7 @@ Le Kit de développement logiciel (SDK) Python HDInsight se trouve dans [l’ind
 Le kit de développement logiciel (SDK) doit d’abord être authentifié avec votre abonnement Azure.  Suivez l’exemple ci-dessous pour créer un principal de service et l’utiliser pour s’authentifier. Une fois cette opération terminée, vous avez une instance de `HDInsightManagementClient`, qui contient de nombreuses méthodes (décrites dans les sections suivantes) pouvant être utilisées pour effectuer des opérations de gestion.
 
 > [!NOTE]
-> Il existe d’autres façons de s’authentifier, en plus de l’exemple suivant, peut-être mieux adaptées à vos besoins. Toutes les méthodes sont décrites ici : [S’authentifier avec les bibliothèques de gestion Azure pour Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
+> Il existe d’autres façons de s’authentifier, en plus de l’exemple suivant, peut-être mieux adaptées à vos besoins. Toutes les méthodes sont décrites ici : [S’authentifier avec les bibliothèques de gestion Azure pour Python](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
 
 ### <a name="authentication-example-using-a-service-principal"></a>Exemple d’authentification à l’aide d’un principal de service
 
@@ -310,9 +310,9 @@ client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={<Diction
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={"tag1Name" : "tag1Value", "tag2Name" : "tag2Value"})
 ```
 
-### <a name="scale-cluster"></a>Mettre le cluster à l’échelle
+### <a name="resize-cluster"></a>Redimensionner le cluster
 
-Vous pouvez mettre à l’échelle un nombre donné de clusters de nœuds Worker en spécifiant une nouvelle taille comme suit :
+Vous pouvez mettre à l’échelle le nombre de nœuds Worker d’un cluster en spécifiant une nouvelle taille comme suit :
 
 ```python
 client.clusters.resize("<Resource Group Name>", "<Cluster Name>", target_instance_count=<Num of Worker Nodes>)
@@ -325,7 +325,7 @@ Le kit de développement logiciel (SDK) HDInsight Management peut également êt
 ### <a name="enable-oms-monitoring"></a>Activer la surveillance OMS
 
 > [!NOTE]
-> Pour activer la surveillance OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en avez pas déjà créé un, vous pouvez apprendre à le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
+> Pour activer la surveillance OMS, vous devez disposer d’un espace de travail Log Analytics existant. Si vous n’en n’avez pas déjà créé un, vous pouvez apprendre comment le faire ici : [Créer un espace de travail Log Analytics dans le portail Azure](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 Pour activer la surveillance OMS sur votre cluster :
 
@@ -353,7 +353,7 @@ client.extension.disable_monitoring("<Resource Group Name>", "<Cluster Name>")
 
 HDInsight fournit une méthode de configuration intitulée actions de script, qui appelle des scripts personnalisés pour personnaliser le cluster.
 > [!NOTE]
-> Vous pouvez trouver plus d’informations sur l’utilisation des actions de script ici : [Personnaliser des clusters HDInsight Linux à l’aide d’actions de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
+> Vous trouverez plus d’informations sur l’utilisation des actions de script ici : [Personnaliser des clusters HDInsight Linux avec des actions de script](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)
 
 ### <a name="execute-script-actions"></a>Exécuter des actions de script
 Pour exécuter des actions de script sur un cluster donné :
