@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 09/18/2018
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 9447d50fd734bd9221accbf470a456210bb57a7f
-ms.sourcegitcommit: e2e4b1ecfac9804a72973477634128061c1ec990
+ms.openlocfilehash: 8d081739a3984e1cd3f7bbf31fcb44d63cfb6947
+ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53455106"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54747709"
 ---
 # <a name="hdinsight-python-management-sdk-preview"></a>Préversion du Kit de développement logiciel (SDK) Python HDInsight
 
@@ -375,7 +375,7 @@ client.script_actions.delete("<Resource Group Name>", "<Cluster Name", "<Script 
 ### <a name="list-persisted-script-actions"></a>Répertorier les actions de script persistantes
 
 > [!NOTE]
-> `list()` et `list_persisted_scripts()` renvoient un objet `RuntimeScriptActionDetailPaged`. Appeler `advance_page()` renvoie une liste de `RuntimeScriptActionDetail` sur cette page et avance l’objet `RuntimeScriptActionDetailPaged` à la page suivante. Cette opération peut être répétée jusqu’à ce qu’une exception `StopIteration` soit générée, indiquant qu’il n’y a plus d’autres pages. Reportez-vous à l’exemple ci-dessous.
+> `list()` et `list_persisted_scripts()` renvoient un objet `RuntimeScriptActionDetailPaged`. Appeler `advance_page()` retourne une liste de `RuntimeScriptActionDetail` sur cette page et avance l’objet `RuntimeScriptActionDetailPaged` à la page suivante. Cette opération peut être répétée jusqu’à ce qu’une exception `StopIteration` soit générée, indiquant qu’il n’y a plus d’autres pages. Reportez-vous à l’exemple ci-dessous.
 
 Pour répertorier toutes les actions de script persistantes pour le cluster spécifié :
 ```python
