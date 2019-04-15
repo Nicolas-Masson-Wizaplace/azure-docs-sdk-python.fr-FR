@@ -87,7 +87,7 @@ Cet exemple crée un groupe de conteneurs à un seul conteneur basé sur des tâ
    `command = ['/bin/sh', '-c', 'echo FOO BAR && tail -f /dev/null']`
 * [Variables d’environnement](/azure/container-instances/container-instances-environment-variables) : deux variables d’environnement sont spécifiées pour le conteneur du groupe de conteneurs. Utilisez des variables d’environnement pour modifier le comportement du script ou d’une application lors de l’exécution, ou transmettre des informations dynamiques à une application s’exécutant dans le conteneur.
 * [Restart policy](/azure/container-instances/container-instances-restart-policy) : le conteneur est configuré à l’aide d’une stratégie de redémarrage « Never », utile pour les conteneurs basés sur des tâches exécutés dans le cadre d’un programme de traitement par lots.
-* Interrogation des opérations avec [AzureOperationPoller][AzureOperationPoller] : une fois la méthode create appelée, l’opération est interrogée pour déterminer quand elle est terminée et à quel moment les journaux du groupe de conteneurs peuvent être obtenus.
+* Interrogation des opérations avec [AzureOperationPoller][AzureOperationPoller] : une fois la méthode create appelée, l’opération est interrogée pour déterminer quand elle est terminée et à quel moment les journaux d’activité du groupe de conteneurs peuvent être obtenus.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[create_container_group_task](~/aci-docs-sample-python/src/aci_docs_sample.py#L199-L275 "Run a task-based container")]
 
