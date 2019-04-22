@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
-ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
+ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504546"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586817"
 ---
 # <a name="hdinsight-sdk-for-python"></a>Kit SDK HDInsight pour Python
 
@@ -131,7 +131,11 @@ client = HDInsightManagementClient(credentials, SUBSCRIPTION_ID)
 
 ### <a name="create-a-cluster"></a>Créer un cluster
 
-Un nouveau cluster peut être créé en appelant `client.clusters.create()`. 
+Un nouveau cluster peut être créé en appelant `client.clusters.create()`.
+
+#### <a name="samples"></a>Exemples
+
+Des exemples de code pour la création de plusieurs types courants de clusters HDInsight sont disponibles : [HDInsight Python Samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
 
 #### <a name="example"></a>Exemples
 
@@ -236,10 +240,6 @@ client.clusters.create(
     ))
 ```
 
-#### <a name="samples"></a>Exemples
-
-Des exemples de code pour la création de plusieurs types courants de clusters HDInsight sont également disponibles : [HDInsight Python Samples](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
-
 ### <a name="get-cluster-details"></a>Obtenir les détails du cluster
 
 Pour obtenir les propriétés d’un cluster donné :
@@ -316,7 +316,7 @@ client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={"tag1Nam
 
 ### <a name="resize-cluster"></a>Redimensionner le cluster
 
-Vous pouvez mettre à l’échelle le nombre de nœuds Worker d’un cluster en spécifiant une nouvelle taille comme suit :
+Vous pouvez mettre à l’échelle un nombre donné de clusters de nœuds Worker en spécifiant une nouvelle taille comme suit :
 
 ```python
 client.clusters.resize("<Resource Group Name>", "<Cluster Name>", target_instance_count=<Num of Worker Nodes>)
