@@ -1,5 +1,5 @@
 ---
-title: Managed Disks
+title: Disques managés
 description: Création, redimensionnement et mise à jour d’un disque géré.
 author: lisawong19
 manager: douge
@@ -17,18 +17,18 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 05/07/2018
 ms.locfileid: "33839404"
 ---
-# <a name="managed-disks"></a>Managed Disks
+# <a name="managed-disks"></a>Disques managés
 
-Azure Managed Disks et 1 000 machines virtuelles dans un groupe identique sont [généralement disponibles](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Azure Managed Disks offre une gestion de disque simplifiée, améliore l’extensibilité et la sécurité. Managed Disks fait disparaître la notion de compte de stockage pour disques, permettant ainsi aux clients de mettre à l’échelle sans avoir à se soucier des limites associées aux comptes de stockage. Cet article fournit une introduction rapide et des références sur l’utilisation du service avec Python.
-
-
-
-Du point de vue du développeur, l’expérience Managed Disks dans Azure CLI est idiomatique à l’expérience CLI rencontrée dans d’autres outils multiplateformes. Vous pouvez utiliser le Kit de développement logiciel (SDK) [Azure Python](https://azure.microsoft.com/develop/python/) et le [package azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) pour administrer Managed Disks. Vous pouvez créer un client de calcul à l’aide de ce [didacticiel](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
+Azure Disques managés et 1 000 machines virtuelles dans un groupe identique sont [généralement disponibles](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Les disques managés Azure offrent une gestion de disque simplifiée, améliorent l’extensibilité et la sécurité. Managed Disks fait disparaître la notion de compte de stockage pour disques, permettant ainsi aux clients de mettre à l’échelle sans avoir à se soucier des limites associées aux comptes de stockage. Cet article fournit une introduction rapide et des références sur l’utilisation du service avec Python.
 
 
-## <a name="standalone-managed-disks"></a>Disques gérés autonomes
 
-Vous pouvez facilement créer des disques gérés autonomes de plusieurs façons.
+Du point de vue du développeur, l’expérience de la fonctionnalité Disques managés dans Azure CLI est idiomatique à l’expérience CLI rencontrée dans d’autres outils multiplateformes. Vous pouvez utiliser le Kit de développement logiciel (SDK) [Azure Python](https://azure.microsoft.com/develop/python/) et le [package azure-mgmt-compute 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) pour administrer la fonctionnalité Disques managés. Vous pouvez créer un client de calcul à l’aide de ce [didacticiel](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).
+
+
+## <a name="standalone-managed-disks"></a>Disques managés autonomes
+
+Vous pouvez facilement créer des disques managés autonomes de plusieurs façons.
 
 ### <a name="create-an-empty-managed-disk"></a>Créez un disque géré vide.
 ```python
@@ -87,9 +87,9 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-## <a name="virtual-machine-with-managed-disks"></a>Machines virtuelles avec des disques gérés
+## <a name="virtual-machine-with-managed-disks"></a>Machines virtuelles avec la fonctionnalité Disques managés
 
-Vous pouvez créer une machine virtuelle avec disque géré implicite pour une image de disque spécifique. La création est simplifiée avec la création implicite de disques gérés, car il n’y a pas besoin de fournir toutes les informations du disque. Vous n’avez pas à vous soucier de la création et de la gestion des comptes de stockage.
+Vous pouvez créer une machine virtuelle avec disque géré implicite pour une image de disque spécifique. La création est simplifiée avec la création implicite de disques managés, car il n’y a pas besoin de fournir toutes les informations du disque. Vous n’avez pas à vous soucier de la création et de la gestion des comptes de stockage.
 
 Un disque géré est créé implicitement lors de la création d’une machine virtuelle à partir d’une image du système d’exploitation dans Azure. Dans le paramètre ``storage_profile``, ``os_disk`` est maintenant facultatif. Vous n’avez pas besoin de créer un compte de stockage pour créer une machine virtuelle.
 
@@ -128,9 +128,9 @@ async_update = compute_client.virtual_machines.create_or_update(
 async_update.wait()
 ```
 
-## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Groupes de machines virtuelles identiques avec des disques gérés
+## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Groupes de machines virtuelles identiques avec la fonctionnalité Disques managés
 
-Avant Managed Disks, il fallait créer un compte de stockage manuellement pour chaque machine virtuelle que vous vouliez placer dans votre groupe identique. Il fallait ensuite utiliser le paramètre de liste ``vhd_containers`` afin de fournir tous les noms de comptes de stockage à l’API REST du groupe identique. Le guide de transition officiel est disponible dans cet article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
+Avant la fonctionnalité Disques managés, il fallait créer un compte de stockage manuellement pour chaque machine virtuelle que vous vouliez placer dans votre groupe identique. Il fallait ensuite utiliser le paramètre de liste ``vhd_containers`` afin de fournir tous les noms de comptes de stockage à l’API REST du groupe identique. Le guide de transition officiel est disponible dans cet article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
 
 Dorénavant, avec Managed Disks, vous n’avez plus à gérer aucun compte de stockage. Si vous êtes habitué au Kit de développement Python VMSS, vous pouvez maintenant utiliser le même ``storage_profile`` que celui utilisé lors de la création d’une machine virtuelle :
 
@@ -198,7 +198,7 @@ result_create = compute_client.virtual_machine_scale_sets.create_or_update(
 vmss_result = result_create.result()
 ``` 
 
-## <a name="other-operations-with-managed-disks"></a>Autres opérations avec Managed Disks
+## <a name="other-operations-with-managed-disks"></a>Autres opérations avec la fonctionnalité Disques managés
 
 ### <a name="resizing-a-managed-disk"></a>Redimensionnement d’un disque géré.
 
@@ -213,7 +213,7 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="update-the-storage-account-type-of-the-managed-disks"></a>Mettez à jour le type de compte de stockage des disques gérés.
+### <a name="update-the-storage-account-type-of-the-managed-disks"></a>Mettez à jour le type de compte de stockage de la fonctionnalité Disques managés.
 ```python
 from azure.mgmt.compute.models import StorageAccountTypes
 
