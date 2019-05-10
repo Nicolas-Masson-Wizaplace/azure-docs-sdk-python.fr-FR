@@ -12,15 +12,15 @@ ms.technology: azure
 ms.devlang: python
 ms.service: compute
 ms.openlocfilehash: adea3dfd1e38fb8c880009d5a02ab2b8be2a67e1
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.sourcegitcommit: a1248376a21fc9a9441ab1fb982a477bce48f565
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2019
 ms.locfileid: "29478822"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Bibliothèques de machines virtuelle Azure
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Des ressources de calcul à la demande et évolutives s’exécutant sous Linux et Windows.
 
@@ -36,7 +36,7 @@ Installez la bibliothèque via pip.
 pip install azure-mgmt-compute 
 ```   
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 
 Créez une machine virtuelle Linux dans un groupe de ressources Azure existant avec l’authentification Managed Service Identity (MSI).
 
@@ -80,7 +80,7 @@ def create_vm()
 * [Authentifier avec Managed Service Identity][2]
 * [Créer une machine virtuelle avec l’extension Managed Service Identity][3]
 * [Gérer un équilibreur de charge][4]
-* [Créer et configurer des disques gérés][5]
+* [Créer et configurer des disques managés][5]
 * [Répertorier des images][6] 
 * [Surveiller les machines virtuelles][7]
 
