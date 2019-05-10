@@ -12,33 +12,33 @@ ms.technology: azure
 ms.devlang: python
 ms.service: compute
 ms.openlocfilehash: adea3dfd1e38fb8c880009d5a02ab2b8be2a67e1
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.sourcegitcommit: a1248376a21fc9a9441ab1fb982a477bce48f565
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2019
 ms.locfileid: "29478822"
 ---
-# <a name="azure-virtual-machine-libraries"></a><span data-ttu-id="e3198-103">Bibliothèques de machines virtuelle Azure</span><span class="sxs-lookup"><span data-stu-id="e3198-103">Azure virtual machine libraries</span></span>
+# <a name="azure-virtual-machine-libraries"></a><span data-ttu-id="e7876-103">Bibliothèques de machines virtuelle Azure</span><span class="sxs-lookup"><span data-stu-id="e7876-103">Azure virtual machine libraries</span></span>
 
-## <a name="overview"></a><span data-ttu-id="e3198-104">Vue d'ensemble</span><span class="sxs-lookup"><span data-stu-id="e3198-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="e7876-104">Vue d’ensemble</span><span class="sxs-lookup"><span data-stu-id="e7876-104">Overview</span></span>
 
-<span data-ttu-id="e3198-105">Des ressources de calcul à la demande et évolutives s’exécutant sous Linux et Windows.</span><span class="sxs-lookup"><span data-stu-id="e3198-105">On-demand, scalable computing resources running Linux or Windows.</span></span>
+<span data-ttu-id="e7876-105">Des ressources de calcul à la demande et évolutives s’exécutant sous Linux et Windows.</span><span class="sxs-lookup"><span data-stu-id="e7876-105">On-demand, scalable computing resources running Linux or Windows.</span></span>
 
-<span data-ttu-id="e3198-106">Pour découvrir les machines virtuelles Azure, consultez la section [Créer une machine virtuelle Linux avec le portail Azure](/azure/virtual-machines/linux/quick-create-portal).</span><span class="sxs-lookup"><span data-stu-id="e3198-106">To get started with Azure Virtual Machines, see [Create a Linux virtual machine with the Azure portal](/azure/virtual-machines/linux/quick-create-portal).</span></span>
+<span data-ttu-id="e7876-106">Pour découvrir les machines virtuelles Azure, consultez la section [Créer une machine virtuelle Linux avec le portail Azure](/azure/virtual-machines/linux/quick-create-portal).</span><span class="sxs-lookup"><span data-stu-id="e7876-106">To get started with Azure Virtual Machines, see [Create a Linux virtual machine with the Azure portal](/azure/virtual-machines/linux/quick-create-portal).</span></span>
 
-## <a name="management-api"></a><span data-ttu-id="e3198-107">API de gestion</span><span class="sxs-lookup"><span data-stu-id="e3198-107">Management API</span></span>
+## <a name="management-api"></a><span data-ttu-id="e7876-107">API de gestion</span><span class="sxs-lookup"><span data-stu-id="e7876-107">Management API</span></span>
 
-<span data-ttu-id="e3198-108">Créez, configurez et mettez à l’échelle des machines virtuelles Windows et Linux dans Azure à partir de votre code avec l’API de gestion.</span><span class="sxs-lookup"><span data-stu-id="e3198-108">Create, configure, manage and scale Windows and Linux virtual machines in Azure from your code with the management API.</span></span>
+<span data-ttu-id="e7876-108">Créez, configurez et mettez à l’échelle des machines virtuelles Windows et Linux dans Azure à partir de votre code avec l’API de gestion.</span><span class="sxs-lookup"><span data-stu-id="e7876-108">Create, configure, manage and scale Windows and Linux virtual machines in Azure from your code with the management API.</span></span>
 
-<span data-ttu-id="e3198-109">Installez la bibliothèque via pip.</span><span class="sxs-lookup"><span data-stu-id="e3198-109">Install the library via pip.</span></span>
+<span data-ttu-id="e7876-109">Installez la bibliothèque via pip.</span><span class="sxs-lookup"><span data-stu-id="e7876-109">Install the library via pip.</span></span>
 
 ```bash
 pip install azure-mgmt-compute 
 ```   
 
-### <a name="example"></a><span data-ttu-id="e3198-110">exemples</span><span class="sxs-lookup"><span data-stu-id="e3198-110">Example</span></span>
+### <a name="example"></a><span data-ttu-id="e7876-110">Exemples</span><span class="sxs-lookup"><span data-stu-id="e7876-110">Example</span></span>
 
-<span data-ttu-id="e3198-111">Créez une machine virtuelle Linux dans un groupe de ressources Azure existant avec l’authentification Managed Service Identity (MSI).</span><span class="sxs-lookup"><span data-stu-id="e3198-111">Create a new Linux virtual machine in an existing Azure resource group with Managed Service Identity(MSI) authentication.</span></span>
+<span data-ttu-id="e7876-111">Créez une machine virtuelle Linux dans un groupe de ressources Azure existant avec l’authentification Managed Service Identity (MSI).</span><span class="sxs-lookup"><span data-stu-id="e7876-111">Create a new Linux virtual machine in an existing Azure resource group with Managed Service Identity(MSI) authentication.</span></span>
 
 ```python
 VM_PARAMETERS={
@@ -72,19 +72,19 @@ def create_vm()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="e3198-112">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="e3198-112">Explore the Management APIs</span></span>](/python/api/overview/azure/virtualmachines/management)
+> [<span data-ttu-id="e7876-112">Explorer les API de gestion</span><span class="sxs-lookup"><span data-stu-id="e7876-112">Explore the Management APIs</span></span>](/python/api/overview/azure/virtualmachines/management)
 
-## <a name="samples"></a><span data-ttu-id="e3198-113">Exemples</span><span class="sxs-lookup"><span data-stu-id="e3198-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="e7876-113">Exemples</span><span class="sxs-lookup"><span data-stu-id="e7876-113">Samples</span></span>
 
-* <span data-ttu-id="e3198-114">[Gérer des machines virtuelles][1]</span><span class="sxs-lookup"><span data-stu-id="e3198-114">[Manage virtual machines][1]</span></span>
-* <span data-ttu-id="e3198-115">[Authentifier avec Managed Service Identity][2]</span><span class="sxs-lookup"><span data-stu-id="e3198-115">[Authenticate with Managed Service Identity][2]</span></span>
-* <span data-ttu-id="e3198-116">[Créer une machine virtuelle avec l’extension Managed Service Identity][3]</span><span class="sxs-lookup"><span data-stu-id="e3198-116">[Create a virtual machine with Managed Service Identity Extension][3]</span></span>
-* <span data-ttu-id="e3198-117">[Gérer un équilibreur de charge][4]</span><span class="sxs-lookup"><span data-stu-id="e3198-117">[Manage a load balancer][4]</span></span>
-* <span data-ttu-id="e3198-118">[Créer et configurer des disques gérés][5]</span><span class="sxs-lookup"><span data-stu-id="e3198-118">[Create and configure managed disks][5]</span></span>
-* <span data-ttu-id="e3198-119">[Répertorier des images][6]</span><span class="sxs-lookup"><span data-stu-id="e3198-119">[List images][6]</span></span> 
-* <span data-ttu-id="e3198-120">[Surveiller les machines virtuelles][7]</span><span class="sxs-lookup"><span data-stu-id="e3198-120">[Monitor virtual machines][7]</span></span>
+* <span data-ttu-id="e7876-114">[Gérer des machines virtuelles][1]</span><span class="sxs-lookup"><span data-stu-id="e7876-114">[Manage virtual machines][1]</span></span>
+* <span data-ttu-id="e7876-115">[Authentifier avec Managed Service Identity][2]</span><span class="sxs-lookup"><span data-stu-id="e7876-115">[Authenticate with Managed Service Identity][2]</span></span>
+* <span data-ttu-id="e7876-116">[Créer une machine virtuelle avec l’extension Managed Service Identity][3]</span><span class="sxs-lookup"><span data-stu-id="e7876-116">[Create a virtual machine with Managed Service Identity Extension][3]</span></span>
+* <span data-ttu-id="e7876-117">[Gérer un équilibreur de charge][4]</span><span class="sxs-lookup"><span data-stu-id="e7876-117">[Manage a load balancer][4]</span></span>
+* <span data-ttu-id="e7876-118">[Créer et configurer des disques managés][5]</span><span class="sxs-lookup"><span data-stu-id="e7876-118">[Create and configure managed disks][5]</span></span>
+* <span data-ttu-id="e7876-119">[Répertorier des images][6]</span><span class="sxs-lookup"><span data-stu-id="e7876-119">[List images][6]</span></span> 
+* <span data-ttu-id="e7876-120">[Surveiller les machines virtuelles][7]</span><span class="sxs-lookup"><span data-stu-id="e7876-120">[Monitor virtual machines][7]</span></span>
 
-<span data-ttu-id="e3198-121">Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) des exemples de machines virtuelles.</span><span class="sxs-lookup"><span data-stu-id="e3198-121">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) of virtual machine samples.</span></span>
+<span data-ttu-id="e7876-121">Afficher la [liste complète](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) des exemples de machines virtuelles.</span><span class="sxs-lookup"><span data-stu-id="e7876-121">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=virtual-machines) of virtual machine samples.</span></span>
 
 [1]: https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/
 [2]: https://github.com/Azure-Samples/resource-manager-python-manage-resources-with-msi
