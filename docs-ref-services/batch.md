@@ -11,18 +11,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fb9528c449d197440590bfc3b1991065cfe13357
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478982"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376837"
 ---
 # <a name="azure-batch-libraries-for-python"></a>Bibliothèques Azure Batch pour Python
 
 ## <a name="overview"></a>Vue d'ensemble
 
-Exécutez efficacement des applications de calcul haute performance en parallèle et à grande échelle dans le cloud avec [Azure Batch](/azure/batch/batch-technical-overview).   
+Exécutez efficacement des applications de calcul haute performance en parallèle et à grande échelle dans le cloud avec [Azure Batch](/azure/batch/batch-technical-overview).
 
 Pour découvrir Azure Batch, consultez [Créer un compte Batch avec le portail Azure](/azure/batch/batch-account-create-portal).
 
@@ -34,7 +34,7 @@ Les bibliothèques de client Azure Batch vous permettent de configurer des nœud
 ```bash
 pip install azure-batch
 ```
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 
 Configurez un pool de nœuds de calcul Linux dans un compte Batch :
 
@@ -67,7 +67,7 @@ pip install azure-mgmt-batch
 > [!div class="nextstepaction"]
 > [Explorer les API clientes](/python/api/overview/azure/batch/client)
 
-### <a name="example"></a>exemples
+### <a name="example"></a>Exemples
 Créez un compte Azure Batch, puis configurez pour ce compte une nouvelle application et un compte de stockage Azure.
 
 ```python

@@ -11,16 +11,16 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 2dd7703e94a814d85716a7b96994666e32f95565
+ms.sourcegitcommit: 3db75daa592da90ea9aa8fd17fb99627a30eb4fd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52275533"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66179870"
 ---
 # <a name="azure-cdn-libraries-for-python"></a>Bibliothèques Azure CDN pour Python
 
-## <a name="overview"></a>Vue d’ensemble
+## <a name="overview"></a>Vue d'ensemble
 
 Le [réseau de distribution de contenu (CDN) Azure](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) vous permet de mettre en cache du contenu web pour garantir une disponibilité de bande passante élevée dans le monde entier.
 
@@ -54,7 +54,7 @@ profile_poller = cdn_client.profiles.create('my-resource-group',
                                             })
 profile = profile_poller.result()
 
-endpoint_poller = client.endpoints.create('my-resource-group',
+endpoint_poller = cdn_client.endpoints.create('my-resource-group',
                                           'cdn-name',
                                           'unique-endpoint-name', 
                                           { 
